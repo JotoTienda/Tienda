@@ -47,8 +47,8 @@
 												<?php
 												$result = isset($_COOKIE["idcliente"]) ? "ion-ios-cart" : "ion-ios-log-in";
 												echo $result;
-												?>
-									"
+												?>">
+									
 								</i>
 								</span>
 							</a>
