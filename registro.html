@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Fruit and Food</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/resgitroResponsive.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="goto-here">
+		<div class="py-1 bg-primary">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-md-0">
+	    		<div class="col-lg-12 d-block">
+		    		<div class="row d-flex">
+		    			<div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">744647091</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">info@fruitbenidorm.es</span>
+					    </div>
+					    <div class="col-md-7 pr-4 d-flex topper align-items-center text-lg-right">
+						    <span class="text">Reparto en 1 dia, al momento recogida en local</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"></a><img src="Logo/logo_transparent_background.png" alt="" style="width: 100px;height: 80px;"></a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	          <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+	          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown04">
+                <a class="dropdown-item" href="shop.html">Verdura</a>
+                <a class="dropdown-item" href="Fruta.html">Frutas</a>
+                <a class="dropdown-item" href="alimentos.html">Productos de cernanía</a> 
+                <a class="dropdown-item" href="product-single.html">Productos</a>
+                <a class="dropdown-item" href="cart.html">Carrito</a>
+                <a class="dropdown-item" href="./php/checkout.php">Compra final</a>
+              </div>
+            </li>
+	          <li class="nav-item active"><a href="about.html" class="nav-link">Acerca de nosotros</a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+	          <li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
+	          <li class="nav-item cta cta-colored"><a href="cart.html" class="nav-link"><span class="icon-shopping_cart"></span>[0]</a></li>
+
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+   
+    <!-- END nav -->
+    <div id="errores"class="row block-8" style="padding: 20px;" ></div>
+    <h1>Formulario de Registro</h1>
+    <form action="alta.php"  method="post" class="formulario">
+      
+        <h2 class="titulo">CREAR UNA CUENTA</h2>
+        <div class="inputs">
+          <input type="text"  name="nombre" id="nombre" placeholder="Nombre" class="i100" required>
+          <input type="text" name="apellido1" id="apellido1" placeholder="Apellido" class="i48" required>
+            <input type="text" name="apellido2" id="apellido2" placeholder="2º Apellido" class="i48" required>
+            <input type="email"  name="correo" id="correo" placeholder="Correo" class="i100" required>
+            <input type="text" name="usuario" id="usuario" placeholder="Usuario" class="i48" required>
+            <input type="password" name="clave" id="clave" placeholder="Contraseña" class="i48" required>
+            <input type="text" name="Direc"id="Direc" placeholder="Dirección" class="i100" required>
+            <input type="text" name="Tele" id="Tele" placeholder="Teléfono" class="i48" required>
+            <input type="text" name="Codigop" id="Codigop" placeholder="Código Postal" class="i48" required>
+            <input type="submit" id="guardar" value="Guarda" class="enviar" onclick="return enviar();">
+            <p class="enlace"> ¿Tiene ya una cuenta? <a href="./php/clientes.php">Entre Aquí</a></p>
+        
+            <br>
+            
+
+          </div>    
+    </form>
+    <br>
+    
+    
+        
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+  <script>
+    function enviar(){
+        
+        var usuario=document.getElementById("usuario");
+        var clave=document.getElementById("clave");
+        var nombre=document.getElementById("nombre");
+        var apellido1=document.getElementById("apellido1");
+        var apellido2=document.getElementById("apellido2");
+        var edad=document.getElementById("Tele");
+        var correo=document.getElementById("correo");
+        var errores=document.getElementById("errores");
+        var Direc=document.getElementById("Direc");
+        var Codigop=document.getElementById("Codigop");
+        errores.style.color="red";
+        var continua=true;
+        var expresion=/\w+@+\w+\.+[a-z]/;
+        var borde="border:1px solid red";
+        var borde_normal="border:1px solid black"
+        var e=[];
+        if (usuario.value==null || usuario.value=="")
+        {
+         
+            e.push("El usuario es obligatorio");
+            usuario.style=borde;
+            continua=false;
+        }
+        else if(usuario.value.length<6)
+        {
+            e.push("El usuario debe tener al menos 6 caracteres");
+            usuario.style=borde;
+            continua=false;
+        }
+        else if(usuario.value.length>20)
+        {
+            e.push("El usuario no puede tener más de 20 caracteres");
+            usuario.style=borde;
+            continua=false;
+        }
+        else
+                usuario.style=borde_normal;
+        if (clave.value==null || clave.value=="")
+        {
+            e.push("La clave es obligatoria");
+            clave.style=borde;
+            continua=false;
+        }
+        else
+                clave.style=borde_normal;
+        if(nombre.value.length>20)
+        {
+            e.push("El nombre no puede tener más de 20 caracteres");
+            nombre.style=borde;
+            continua=false;
+        }
+        else
+                usuario.style=borde_normal; 
+        if(apellido1.value.length>15)
+        {
+            e.push("El apellido no puede tener más de 15 caracteres");
+            apellido1.style=borde;
+            continua=false;
+        }
+        else
+                apellido1.style=borde_normal; 
+        if(apellido2.value.length>15)
+        {
+            e.push("El apellido no puede tener más de 15 caracteres");
+            apellido2.style=borde;
+            continua=false;
+        }
+        else
+                apellido2.style=borde_normal;  
+        if(isNaN(Tele.value) || Tele.value=="" || Tele.value==null)
+        {
+            e.push("El teléfono debe ser un número");
+            Tele.style=borde;
+            continua=false;
+        }
+        
+        else
+                Tele.style=borde_normal;
+              
+        if (!expresion.test(correo.value)){
+            e.push("Introduca un email correcto");
+            correo.style=borde;
+            continua=false;
+        }
+        else
+                correo.style=borde_normal;
+        
+          if(Direc.value.length>40)
+        {
+            e.push("La dirección no puede tener más de 40 caracteres");
+            Direc.style=borde;
+            continua=false;
+        }
+        else
+                Direc.style=borde_normal; 
+         if(Codigop.value.length>8)
+        {
+            e.push("El código postal no puede tener más de 8 caracteres");
+            Codigop.style=borde;
+            continua=false;
+        }
+        else
+                Codigop.style=borde_normal; 
+        if(isNaN(Codigop.value) || Codigop.value=="" || Codigop.value==null)
+        {
+            e.push("El código postal debe ser un número");
+            Codigop.style=borde;
+            continua=false;
+        }
+        
+        else
+                Codigop.style=borde_normal;
+
+        errores.innerHTML=e.join(" / ");
+        return continua;
+    }
+  </script>
+</html>
