@@ -45,8 +45,7 @@
 								<span>
 									<i class="
 												<?php
-												$result = isset($_COOKIE["idcliente"]) ? "ion-ios-cart" : "ion-ios-log-in";
-												echo $result;
+												echo isset($_COOKIE["idcliente"]) ? "ion-ios-cart" : "ion-ios-log-in";
 												?>
 									"></i>
 								</span>
