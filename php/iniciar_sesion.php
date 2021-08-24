@@ -17,7 +17,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 		$_SESSION['idcliente'] = $fila['idcliente'];
 		?>
 		<script>
-			window.location.replace("http://fruitbenidorm.es/php/shop.php");
+			//window.location.replace("http://fruitbenidorm.es/php/shop.php");
 		</script>
 		<?php
 		header('Location: http://fruitbenidorm.es/php/shop.php');
