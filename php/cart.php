@@ -31,10 +31,11 @@ require("conecta.php");
 	<link rel="stylesheet" href="../css/flaticon.css" />
 	<link rel="stylesheet" href="../css/icomoon.css" />
 	<link rel="stylesheet" href="../css/style.css" />
-	<script defer src="../js/xojeFunciones.js"></script>
+	<script type="module" defer src="../js/actualizaCarrito.js"></script>
+
 </head>
 
-<body class="goto-here" onload="actualizaNumCarrito();">
+<body class="goto-here">
 	<?php
 	require("navbar.php");
 	?>
