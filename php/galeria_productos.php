@@ -46,7 +46,7 @@
 												<i class="
 												<?php
 												$result = "";
-												if (isset($_COOKIE["isLogged"])) {
+												if (isset($_COOKIE["idcliente"])) {
 													$result = "ion-ios-cart";
 												} else {
 													$result = "ion-ios-log-in";
