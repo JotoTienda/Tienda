@@ -49,7 +49,7 @@
 												if (isset($_COOKIE["isLogged"])) {
 													$result = "ion-ios-cart";
 												} else {
-													$result = "fas fa-sign-in-alt";
+													$result = "ion-ios-log-in";
 												}
 												echo $result;						?>"></i> </span>
 										</a>
