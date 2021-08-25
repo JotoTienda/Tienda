@@ -11,3 +11,12 @@ if ($con->connect_error) {
 } else {
 	echo '<p>Se ha establecido la conexión al servidor MySQL con éxito.</p>';
 }
+
+if (isset($_SESSION['idcliente'])) {
+	$query_login = 'SELECT * FROM clientes WHERE idcliente =' . $_SESSION['idcliente'];
+
+	$resultado = mysqli_query($con, $query_login);
+	$fila = mysqli_fetch_assoc($resultado);
+
+	echo "<p>".$fila["usuario"]."</p>";
+}
