@@ -18,5 +18,5 @@ if (isset($_SESSION['idcliente'])) {
 	$resultado = mysqli_query($con, $query_login);
 	$fila = mysqli_fetch_assoc($resultado);
 
-	echo "<p>".$fila["usuario"]."</p>";
+	echo "<p> Conectado con :".$fila["usuario"]."</p>";
 }
