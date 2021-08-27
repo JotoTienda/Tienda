@@ -18,7 +18,7 @@ $Codigop = $_POST["Codigop"];
 
 ?>
 <?php
-require("navbar.php");
+require("includes/navbar.php");
 ?>
 <div id="errores" class="row block-8" style="padding: 20px;"></div>
 <h1>Registrado</h1>

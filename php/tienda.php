@@ -76,14 +76,14 @@ $mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from producto
 							<a class="dropdown-item" href="Fruta.html">Frutas</a>
 							<a class="dropdown-item" href="alimentos.html">Productos de cernanía</a>
 							<a class="dropdown-item" href="product-single.html">Productos</a>
-							<a class="dropdown-item" href=".../php/cart.php">Carrito</a>
-							<a class="dropdown-item" href="checkout.php">Compra final</a>
+							<a class="dropdown-item" href=".../php/pages/cart.php">Carrito</a>
+							<a class="dropdown-item" href="pages/checkout.php">Compra final</a>
 						</div>
 					</li>
 					<li class="nav-item active"><a href="about.html" class="nav-link">Acerca de nosotros</a></li>
 					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 					<li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
-					<li class="nav-item cta cta-colored"><a href=".../php/cart.php" class="nav-link" id="logo_cart"><span class="icon-shopping_cart"></span>[0]</a></li>
+					<li class="nav-item cta cta-colored"><a href=".../php/pages/cart.php" class="nav-link" id="logo_cart"><span class="icon-shopping_cart"></span>[0]</a></li>
 
 				</ul>
 			</div>

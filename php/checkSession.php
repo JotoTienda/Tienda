@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 if (isset($_SESSION['idcliente'])) {
 	$query_login = 'SELECT * FROM clientes WHERE idcliente =' . $_SESSION['idcliente'];
 
@@ -11,4 +11,5 @@ if (isset($_SESSION['idcliente'])) {
 	if (count($fila) > 0) {
 		$user = $fila;
 	}
+
 }

@@ -1,6 +1,6 @@
 <?php
 
-    if(!$_POST)
+    if(!$_POST){
 
         header("Location:registro.html");
     }
@@ -88,7 +88,7 @@
                 <a class="dropdown-item" href="alimentos.html">Productos de cernanía</a> 
                 <a class="dropdown-item" href="product-single.html">Productos</a>
                 <a class="dropdown-item" href="cart.html">Carrito</a>
-                <a class="dropdown-item" href="./php/checkout.php">Compra final</a>
+                <a class="dropdown-item" href="./php/pages/checkout.php">Compra final</a>
               </div>
             </li>
 	          <li class="nav-item active"><a href="about.html" class="nav-link">Acerca de nosotros</a></li>
