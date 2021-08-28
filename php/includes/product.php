@@ -1,6 +1,6 @@
 <div class="col-md-6 col-lg-3 ftco-animate">
 			<div class="product">
-                <span id="id_product" style="display: none;"><?php $fila["idproducto"];?></span>
+                <span id="id_product" style="display: none;"><?php echo $fila["idproducto"];?></span>
 				<a href="#" class="img-prod"><img class="img-fluid" src="../../images/<?php echo $fila["foto_p"]; ?>" alt="imagen no disponible">
 					<?php
 
