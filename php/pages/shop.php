@@ -5,6 +5,7 @@ $mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from producto
 
 <?php
 require("../includes/navbar.php");
+session_start();
 echo "<p>Cliente :".$_SESSION['idcliente']."</p>";
 ?>
 <script defer type="module" src="../../js/addProducto.js"></script>
