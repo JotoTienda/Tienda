@@ -3,7 +3,7 @@
 require("conecta.php");
 require("valida_campos.php");
 $listar = "select * from clientes";
-session_start();
+//session_start();
 if (isset($_POST)) // esto es lo mismo que if(!_POST)$_SERVER["REQUEST_METHOD"]=="POST"
 {
 	//echo "viene por post";

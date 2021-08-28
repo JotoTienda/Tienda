@@ -5,6 +5,7 @@ $mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from producto
 
 <?php
 require("../includes/navbar.php");
+echo "<p>Cliente :".$_SESSION['idcliente']."</p>";
 ?>
 <script defer type="module" src="../../js/addProducto.js"></script>
 <div class="hero-wrap hero-bread" style="background-image: url('../../images/bg_1.jpg');">
