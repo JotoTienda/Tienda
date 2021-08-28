@@ -4,11 +4,9 @@
 
 	while ($fila = mysqli_fetch_assoc($resultado))
 	// mientras q resultado tenga registros los va guardando en fila
-	{ ?>
-		<?php
+	{
 		require("../includes/product.php");
-		?>
-	<?php } ?>
+	} ?>
 
 </div>
 <div class="row mt-5">
