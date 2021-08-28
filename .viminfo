@@ -11,6 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
+:q
+|2,0,1630073144,,"q"
+:Q
+|2,0,1630073141,,"Q"
 :qa!
 |2,0,1629553270,,"qa!"
 
@@ -25,14 +29,36 @@
 # Registers:
 
 # File marks:
-'0  1  8  ~/index.html
-|4,48,1,8,1629553270,"~/index.html"
+'0  6  3  ~/.gitignore
+|4,48,6,3,1630073144,"~/.gitignore"
+'1  6  3  ~/.gitignore
+|4,49,6,3,1630073129,"~/.gitignore"
+'2  1  8  ~/index.html
+|4,50,1,8,1629553270,"~/index.html"
 
 # Jumplist (newest first):
+-'  6  3  ~/.gitignore
+|4,39,6,3,1630073144,"~/.gitignore"
+-'  6  3  ~/.gitignore
+|4,39,6,3,1630073129,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1630073122,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1630073122,"~/.gitignore"
+-'  1  8  ~/index.html
+|4,39,1,8,1629553270,"~/index.html"
+-'  1  8  ~/index.html
+|4,39,1,8,1629553270,"~/index.html"
+-'  1  8  ~/index.html
+|4,39,1,8,1629553270,"~/index.html"
 -'  1  8  ~/index.html
 |4,39,1,8,1629553270,"~/index.html"
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	*	1630073141	0
+	"	6	3
 
 > ~/index.html
 	*	1629553264	0

@@ -79,3 +79,19 @@ git push -u origin main
 git remote add origin https://github.com/JotoTienda/Tienda.git
 git push -u origin main
 git push -u origin main
+git status
+vi .gitignore 
+git checkout -- .bash_history
+git status
+git checkout -- .viminfo
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git status
+vi .gitignore 
+vi .gitignore 
