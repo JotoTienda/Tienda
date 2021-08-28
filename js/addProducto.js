@@ -17,7 +17,7 @@ productos.forEach(producto => {
 		} else {
 			window.location.href = 'clientes.php';
 		} */
-		const idProducto=producto.querySelector("#id_product");
-		window.location.href=`http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.value}`;
+		/* const idProducto=producto.querySelector("#id_product");
+		window.location.href=`http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.value}`; */
 	};
 });

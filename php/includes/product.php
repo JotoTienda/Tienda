@@ -1,6 +1,5 @@
-<div class="col-md-6 col-lg-3 ftco-animate">
+<div class="col-md-6 col-lg-3 ftco-animate" onclick="window.location.href=`http:\/\/fruitbenidorm.es/php/pages/product-single.php?id="<?php echo$fila["idproducto"];?>>
 			<div class="product">
-                <span id="id_product" style="display: none;"><?php echo $fila["idproducto"];?></span>
 				<a href="#" class="img-prod"><img class="img-fluid" src="../../images/<?php echo $fila["foto_p"]; ?>" alt="imagen no disponible">
 					<?php
 
