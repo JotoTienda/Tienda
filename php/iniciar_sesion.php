@@ -15,7 +15,8 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 	$message = '';
 	if (count($fila) > 0 && password_verify($_POST['clave'], $fila['clave'])) {
 		$_SESSION['idcliente'] = $fila['idcliente'];
-		echo "<script>window.location.replace('http://fruitbenidorm.es/php/pages/shop.php');</script>";
+		echo "<p>Cliente :".$_SESSION['idcliente']."</p>";
+		//echo "<script>window.location.replace('http://fruitbenidorm.es/php/pages/shop.php');</script>";
 		
 		//header('Location: http://fruitbenidorm.es/php/shop.php');
 		exit();
