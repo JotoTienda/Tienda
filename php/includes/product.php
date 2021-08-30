@@ -1,9 +1,7 @@
 <?php
 require("../checkSession.php");
 $isLogged = !empty($user);
-echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
-$retVal = ($isLogged) ? "a" : "b";
-echo $retVal;
+echo "<p>Cliente :" . $_SESSION["idcliente"] . "</p>";
 ?>
 
 <div class="col-md-6 col-lg-3 ftco-animate">
