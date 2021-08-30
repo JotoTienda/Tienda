@@ -18,6 +18,6 @@ productos.forEach(producto => {
 			window.location.href = 'clientes.php';
 		} */
 		const idProducto=producto.querySelector(".d-none");
-		window.location.href=`http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.value}`;
+		window.location.href=`http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.innerText}`;
 	};
 });
