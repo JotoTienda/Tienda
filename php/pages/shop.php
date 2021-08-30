@@ -3,8 +3,6 @@ require("../conecta.php");
 require("../checkSession.php");
 
 $mostrar = "SELECT * from productos;";
-echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
-
 ?>
 
 <?php
