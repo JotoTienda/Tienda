@@ -2,8 +2,10 @@
 require '../conecta.php';
 require("../checkSession.php");
 ?>
+<?php
+echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
 
-<?php require("../includes/navbar.php");
+require("../includes/navbar.php");
 ?>
 <?php if (!empty($user)) : ?>
 	<br> Welcome. <?= $user['nombre']; ?>
@@ -14,7 +16,7 @@ require("../checkSession.php");
 <?php else :
 	require("../includes/form_login.php");
 
-endif; 
+endif;
 
 require("../includes/main_footer.php");
 
