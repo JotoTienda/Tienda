@@ -1,6 +1,7 @@
 <?php
 require("../checkSession.php");
 $isLogged = !empty($user);
+echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
 $retVal = ($isLogged) ? "a" : "b" ;
 echo $retVal;
 ?>
