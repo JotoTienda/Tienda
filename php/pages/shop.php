@@ -5,8 +5,8 @@ $mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from producto
 
 <?php
 require("../includes/navbar.php");
-session_start();
-echo "<p>Cliente :".$_SESSION['idcliente']."</p>";
+require("../checkSession.php");
+echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
 ?>
 <script defer type="module" src="../../js/addProducto.js"></script>
 <div class="hero-wrap hero-bread" style="background-image: url('../../images/bg_1.jpg');">
@@ -28,7 +28,7 @@ echo "<p>Cliente :".$_SESSION['idcliente']."</p>";
 					<li><a href="./shop.php" class="active">Todo</a></li>
 					<li><a href="./vegetales.php">Vegetales</a></li>
 					<li><a href="./frutas.php">Frutas</a></li>
-                    <li><a href="./miel.php">Miel</a></li>
+					<li><a href="./miel.php">Miel</a></li>
 					<li><a href="./productos.php">Productos de cercanía</a></li>
 					<li><a href="./pages/alimentacion.php">Alimentación y bebidas</a></li>
 				</ul>

@@ -1,15 +1,13 @@
 <div class="row">
 	<?php
-	$resultado = mysqli_query($con, $mostrar); // resultado tiene todos los registros dentro
+	$resultado = mysqli_query($con, $mostrar);
 
-	while ($fila = mysqli_fetch_assoc($resultado))
-	// mientras q resultado tenga registros los va guardando en fila
-	{
+	while ($fila = mysqli_fetch_assoc($resultado)) {
 		require("../includes/product.php");
 	} ?>
 
 </div>
-<div class="row mt-5">
+<!-- <div class="row mt-5">
 	<div class="col text-center">
 		<div class="block-27">
 			<ul>
@@ -23,4 +21,4 @@
 			</ul>
 		</div>
 	</div>
-</div>
+</div> -->
