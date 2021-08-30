@@ -1,3 +1,4 @@
+<script defer type="module" src="../../js/selectProducto.js"></script>
 <div class="row">
 	<?php
 	require("../conecta.php");
