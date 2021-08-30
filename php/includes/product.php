@@ -1,4 +1,5 @@
 <?php
+require("../checkSession.php");
 $isLogged = !empty($user);
 
 ?>

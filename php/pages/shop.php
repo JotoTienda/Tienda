@@ -1,6 +1,5 @@
 <?php
 require("../conecta.php");
-require("../checkSession.php");
 
 $mostrar = "SELECT * from productos;";
 ?>
