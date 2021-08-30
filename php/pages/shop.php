@@ -2,7 +2,7 @@
 require("../conecta.php");
 require("../checkSession.php");
 
-$mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from productos;";
+$mostrar = "SELECT * from productos;";
 echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
 
 ?>

@@ -1,7 +1,6 @@
 <div class="row">
 	<?php
 	$resultado = mysqli_query($con, $mostrar);
-
 	while ($fila = mysqli_fetch_assoc($resultado)) {
 		require("../includes/product.php");
 	} ?>
