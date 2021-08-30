@@ -95,3 +95,29 @@ git pull
 git status
 vi .gitignore 
 vi .gitignore 
+git status
+git status
+git add .
+git commit -m "Add imgs and modify single-product"
+git push
+git push
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+clear
+git status
+git pull
+git pull 
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git status

@@ -28,6 +28,7 @@ echo "<p>Cliente :".$_SESSION['idcliente']."</p>";
 					<li><a href="./shop.php" class="active">Todo</a></li>
 					<li><a href="./vegetales.php">Vegetales</a></li>
 					<li><a href="./frutas.php">Frutas</a></li>
+                    <li><a href="./miel.php">Miel</a></li>
 					<li><a href="./productos.php">Productos de cercanía</a></li>
 					<li><a href="./pages/alimentacion.php">Alimentación y bebidas</a></li>
 				</ul>

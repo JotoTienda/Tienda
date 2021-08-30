@@ -8,11 +8,11 @@ $mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from producto
 	require("../includes/navbar.php");
 	?>
 	<script src="../../js/addProducto.js"></script>
-	<div class="hero-wrap hero-bread" style="background-image: url('../../images/bg_1.jpg');">
+	<div class="hero-wrap hero-bread" style="background-image: url('../../images/cesta1.jpg');">
 		<div class="container">
 			<div class="row no-gutters slider-text align-items-center justify-content-center">
 				<div class="col-md-9 ftco-animate text-center">
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Inicio</a></span> <span>Producto de cercanía</span></p>
+					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Inicio</a></span> <span>Productos de las comarcas Marinas</span></p>
 					<h1 class="mb-0 bread">Producto de cercanía</h1>
 				</div>
 			</div>
@@ -28,6 +28,7 @@ $mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from producto
 						<li><a href="./vegetales.php">Vegetales</a></li>
 						<li><a href="./frutas.php">Frutas</a></li>
 						<li><a href="./productos.php" class="active">Productos de cercanía</a></li>
+                       <li><a href="./miel.php"> Miel</a></li>
 						<li><a href="./alimentacion.php">Alimentación y bebidas</a></li>
 					</ul>
 				</div>
