@@ -2,6 +2,7 @@
 
 require ("conecta.php");// inserta el código php de la página conecta.php
 require ("valida_campos.php");
+require("test_input.php");
 
 session_start();
 if(isset($_POST))// esto es lo mismo que if(!_POST)$_SERVER["REQUEST_METHOD"]=="POST"
@@ -10,8 +11,8 @@ if(isset($_POST))// esto es lo mismo que if(!_POST)$_SERVER["REQUEST_METHOD"]=="
     if(isset($_POST["usuario"]) && isset($_POST["clave"]))//Miro si los campos vienen rellenos
     {
         // Cargo los datos del formulario
-        $usuario=valida_campo($_POST["usuario"]);
-        $clave=valida_campo($_POST["clave"]);
+        $usuario=TestInput(valida_campo($_POST["usuario"]));
+        $clave=TestInput(valida_campo($_POST["clave"]));
 
         $sql="Select * from usuarios where usuario='$usuario' and clave='$clave'";
         //echo $sql;
