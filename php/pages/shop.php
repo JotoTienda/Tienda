@@ -1,10 +1,4 @@
 <?php
-require("../conecta.php");
-
-$mostrar = "SELECT * from productos;";
-?>
-
-<?php
 require("../includes/navbar.php");
 ?>
 <script defer type="module" src="../../js/addProducto.js"></script>

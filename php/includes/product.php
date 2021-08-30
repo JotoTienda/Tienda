@@ -1,7 +1,8 @@
 <?php
 require("../checkSession.php");
 $isLogged = !empty($user);
-
+$retVal = ($isLogged) ? "a" : "b" ;
+echo $retVal;
 ?>
 
 <div class="col-md-6 col-lg-3 ftco-animate">

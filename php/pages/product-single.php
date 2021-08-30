@@ -5,14 +5,13 @@ if (!isset($id)) :
 else:
     require ("../conecta.php");
     $mostrar="SELECT * FROM productos WHERE idproducto=".$id;
-    $resultado = mysqli_query($con, $mostrar); // resultado tiene todos los registros dentro
+    $resultado = mysqli_query($con, $mostrar);
 
 	$fila = mysqli_fetch_assoc($resultado);
     require("../includes/navbar.php");
 
     require("../includes/product.php");
-
-
+    
     require("../includes/main_footer.php");
 endif;
     
