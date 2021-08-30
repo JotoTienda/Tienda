@@ -28,7 +28,7 @@ require("../includes/navbar.php");
 			</div>
 		</div>
 		<?php
-		$mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from productos WHERE categoria='fruta';";
+		$mostrar = "SELECT * from productos WHERE categoria='fruta';";
 		require("../includes/galeria_productos.php")
 		?>
 	</div>
