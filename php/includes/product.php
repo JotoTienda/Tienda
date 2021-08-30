@@ -4,7 +4,12 @@ $isLogged = !empty($user);
 ?>
 
 <div class="col-md-6 col-lg-3 ftco-animate">
-	<div class="product" onclick="window.location.href=" <?php echo "http:\/\/fruitbenidorm.es/php/pages/product-single.php?id=" . $fila["idproducto"]; ?>>
+	<div class="product">
+		<span class="d-none">
+			<?php
+			echo $fila["idproducto"];
+			?>
+		</span>
 		<a href="#" class="img-prod"><img class="img-fluid" src="../../images/<?php echo $fila["foto_p"]; ?>" alt="imagen no disponible">
 			<?php
 			if ($fila["descuento"] > 0) {
