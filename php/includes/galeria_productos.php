@@ -1,7 +1,6 @@
 <div class="row">
 	<?php
 	require("../conecta.php");
-	$mostrar = "SELECT * from productos;";
 	$resultado = mysqli_query($con, $mostrar);
 	while ($fila = mysqli_fetch_assoc($resultado)) {
 		require("../includes/product.php");

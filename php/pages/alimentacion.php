@@ -1,11 +1,4 @@
 <?php
-
-require("../conecta.php");
-
-$mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from productos WHERE categoria='alimentacion';";
-?>
-
-<?php
 require("../includes/navbar.php");
 ?>
 
@@ -28,13 +21,14 @@ require("../includes/navbar.php");
 					<li><a href="./shop.php">Todo</a></li>
 					<li><a href="./vegetales.php">Vegetales</a></li>
 					<li><a href="./frutas.php">Frutas</a></li>
-                    <li><a href="./miel.php">Miel</a></li>
+					<li><a href="./miel.php">Miel</a></li>
 					<li><a href="./productos.php">Productos de cercanía</a></li>
 					<li><a href="./pages/alimentacion.php" class="active">Alimentación y bebida</a></li>
 				</ul>
 			</div>
 		</div>
 		<?php
+		$mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from productos WHERE categoria='alimentacion';";
 		require("../includes/galeria_productos.php")
 		?>
 	</div>

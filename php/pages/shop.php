@@ -27,6 +27,7 @@ require("../includes/navbar.php");
 			</div>
 		</div>
 		<?php
+		$mostrar = "SELECT * from productos;";
 		require("../includes/galeria_productos.php")
 		?>
 	</div>
