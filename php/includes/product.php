@@ -1,10 +1,5 @@
 <?php
 $isLogged = !empty($user);
-if ($isLogged) {
-	echo "<p>Cliente :" . $isLogged . "</p>";
-}else {
-	echo "<p>Cliente NO:" . $isLogged . "</p>";
-}
 
 ?>
 
