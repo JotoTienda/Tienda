@@ -1,12 +1,14 @@
 <?php
 require("../conecta.php");
+require("../checkSession.php");
+
 $mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from productos;";
+echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
+
 ?>
 
 <?php
 require("../includes/navbar.php");
-require("../checkSession.php");
-echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
 ?>
 <script defer type="module" src="../../js/addProducto.js"></script>
 <div class="hero-wrap hero-bread" style="background-image: url('../../images/bg_1.jpg');">
@@ -19,7 +21,6 @@ echo "<p>Cliente :" . $_SESSION['idcliente'] . "</p>";
 		</div>
 	</div>
 </div>
-
 <section class="ftco-section">
 	<div class="container">
 		<div class="row justify-content-center">

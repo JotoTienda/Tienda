@@ -1,16 +1,16 @@
 <?php
 $isLogged = !empty($user);
+echo "<p>Cliente :" . $isLogged . "</p>";
+
 ?>
 
 <div class="col-md-6 col-lg-3 ftco-animate">
 	<div class="product" onclick="window.location.href=`http:\/\/fruitbenidorm.es/php/pages/product-single.php?id=" <?php echo $fila["idproducto"]; ?>>
 		<a href="#" class="img-prod"><img class="img-fluid" src="../../images/<?php echo $fila["foto_p"]; ?>" alt="imagen no disponible">
 			<?php
-
 			if ($fila["descuento"] > 0) {
 				echo '<span class="status">' . $fila["descuento"] . '%</span>';
 			}
-
 			?>
 			<div class="overlay"></div>
 		</a>
