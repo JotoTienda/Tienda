@@ -1,6 +1,6 @@
 <?php
 $id=$_GET["id"];
-if (!isset($id)) :
+if (!isset($id) || $id=="") :
     header("location:http://fruitbenidorm.es/php/pages/shop.php");
 else:
     require ("../conecta.php");
