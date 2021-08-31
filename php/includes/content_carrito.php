@@ -1,11 +1,13 @@
 <?php
 $precioTotal = 0;
 if (isset($_COOKIE["carrito"])) {
-    echo "<script>alert('Entro')</script>";
     $carrito = json_decode($_COOKIE["carrito"]);
     $productos = $carrito->{'productos'};
     for ($x = 0; $x < count($productos); $x++) {
+
         $idProducto = $productos[$x]->{"id"};
+        echo "<script>alert(" . $idProducto . ")</script>";
+
         $cantidadProducto = $productos[$x]->{"cantidad"};
         $mostrar = "SELECT * from productos WHERE producto='$idProducto';";
         $resultado = mysqli_query($con, $mostrar);
