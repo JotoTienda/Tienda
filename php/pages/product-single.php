@@ -7,7 +7,7 @@ else:
     $mostrar="SELECT * FROM productos WHERE idproducto=".$id;
     $resultado = mysqli_query($con, $mostrar);
 	$fila = mysqli_fetch_assoc($resultado);
-    echo "<script src='../../js/addProducto.js'></script>";
+    echo "<script defer type='module' src='../../js/addProducto.js'></script>";
     require("../includes/navbar.php");
 
     require("../includes/product.php");
