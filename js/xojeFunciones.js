@@ -145,8 +145,8 @@ export function checkIsLogged() {
 	const login = getCookie('isLogged');
 }
 export function disableAnchorChilds(wrapper=document.createElement("div")) {
-	const hijosProductos = producto.querySelectorAll('a');
-	hijosProductos.forEach(hijo => {
+	const hijosWrapper = wrapper.querySelectorAll('a');
+	hijosWrapper.forEach(hijo => {
 		hijo.onclick = e => {
 			e.preventDefault();
 		};
