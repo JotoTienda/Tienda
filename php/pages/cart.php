@@ -120,7 +120,7 @@ require("../includes/navbar.php");
 					</p>
 				</div>
 				<p>
-					<a href="../html/pages/checkout.php" class="btn btn-primary py-3 px-4" id="terminar_compra">Proceder a la venta</a>
+					<a href="checkout.php" class="btn btn-primary py-3 px-4" id="terminar_compra">Proceder a la venta</a>
 				</p>
 			</div>
 		</div>
