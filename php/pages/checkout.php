@@ -1,5 +1,5 @@
 <?php
-require("includes/navbar.php");
+require("../includes/navbar.php");
 ?>
 
 <div class="hero-wrap hero-bread" style="background-image: url('../images/bg_1.jpg');">
