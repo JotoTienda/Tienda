@@ -9,7 +9,7 @@ if (isset($_COOKIE["carrito"])) {
         echo "<script>alert(" . $idProducto . ")</script>";
 
         $cantidadProducto = $productos[$x]->{"cantidad"};
-        $mostrar = "SELECT * from productos WHERE idproducto='$idProducto';";
+        $mostrar = "SELECT * FROM productos WHERE idproducto=".$idProducto.";";
         $resultado = mysqli_query($con, $mostrar);
         while ($fila = mysqli_fetch_assoc($resultado)) {
             if ($fila["descuento"] > 0) {
