@@ -1,6 +1,7 @@
 <?php
 $precioTotal = 0;
 if (isset($_COOKIE["carrito"])) {
+    echo "<script>alert('Entro')</script>";
     $carrito = json_decode($_COOKIE["carrito"]);
     $productos = $carrito->{'productos'};
     for ($x = 0; $x < count($productos); $x++) {
