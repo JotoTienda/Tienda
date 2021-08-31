@@ -1,23 +1,14 @@
-export function addProduct(newProduct = { nombre: '', precio: 0 }) {
+export function addProduct(newProduct = { id: '', precio: 0 }) {
 	let carrito = getCookie('carrito');
 	if (!carrito) {
 		let data = {
 			cliente: {
-				nombre: 'Juan',
-				apellido1: 'Sánchez',
-				apellido2: 'Alvarez',
-				pais: 'suecia',
-				direccion: 'Paseo de la carreta',
-				piso: '4º A',
-				ciudad: 'Callosa',
-				cPostal: '03502',
-				telefono: '123123123',
-				email: 'a@ejemplo.com',
+				id:sessionStorage.getItem('idcliente')
 			},
 			productos: [],
 		};
 		data.productos.push({
-			nombre: newProduct.nombre,
+			id: newProduct.id,
 			cantidad: 1,
 			coste: newProduct.precio,
 		});
@@ -26,14 +17,14 @@ export function addProduct(newProduct = { nombre: '', precio: 0 }) {
 		let aumentado = false;
 		carrito = JSON.parse(carrito);
 		carrito.productos.forEach(producto => {
-			if (producto.nombre == newProduct.nombre) {
+			if (producto.id == newProduct.id) {
 				producto.cantidad++;
 				producto.coste += producto.coste;
 				aumentado = true;
 			}
 		});
 		if (!aumentado) {
-			carrito.productos.push({ nombre: newProduct, cantidad: 1 });
+			carrito.productos.push({ id: newProduct.id, cantidad: 1 });
 		}
 		setCookie('carrito', carrito);
 	}

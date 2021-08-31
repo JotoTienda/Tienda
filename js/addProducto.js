@@ -5,8 +5,10 @@ const btn_cart=btn_add.querySelector(".ion-ios-cart");
 disableAnchorChilds(producto);
 btn_add.onclick=()=>{
     if (btn_cart) {
-        alert("add carrito");
+        const id=producto.querySelector(".d-none").innerText;
+        const precio=parseInt(producto.querySelector(".price-sale").innerText);
+        addProduct({id,precio});
     } else {
-        alert("Redirect loggin");
+        window.location.href = "http://fruitbenidorm.es/php/pages/shop.php";
     }
 };
