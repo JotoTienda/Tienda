@@ -6,8 +6,6 @@ if (isset($_COOKIE["carrito"])) {
     for ($x = 0; $x < count($productos); $x++) {
 
         $idProducto = $productos[$x]->{"id"};
-        echo "<script>alert(" . $idProducto . ")</script>";
-
         $cantidadProducto = $productos[$x]->{"cantidad"};
         $mostrar = "SELECT * FROM productos WHERE idproducto=".$idProducto.";";
         $resultado = mysqli_query($con, $mostrar);
@@ -26,7 +24,7 @@ if (isset($_COOKIE["carrito"])) {
                     <a href="#"><span class="ion-ios-close"></span></a>
                 </td>
                 <td class="image-prod">
-                    <div class="img" style="background-image: url(../images/
+                    <div class="img" style="background-image: url(../../images/
                     <?php echo $fila["foto_p"]; ?>)"></div>
                 </td>
                 <td class="product-name">
