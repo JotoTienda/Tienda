@@ -4,9 +4,9 @@ if (isset($_COOKIE["carrito"])) {
     $carrito = json_decode($_COOKIE["carrito"]);
     $productos = $carrito->{'productos'};
     for ($x = 0; $x < count($productos); $x++) {
-        $nombreProducto = $productos[$x]->{"nombre"};
+        $idProducto = $productos[$x]->{"id"};
         $cantidadProducto = $productos[$x]->{"cantidad"};
-        $mostrar = "SELECT * from productos WHERE producto='$nombreProducto';";
+        $mostrar = "SELECT * from productos WHERE producto='$idProducto';";
         $resultado = mysqli_query($con, $mostrar);
         while ($fila = mysqli_fetch_assoc($resultado)) {
             if ($fila["descuento"] > 0) {
