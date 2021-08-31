@@ -1,6 +1,8 @@
 <script defer type="module" src="../../js/selectProducto.js"></script>
 <div class="row">
 	<?php
+	$id = $_SESSION['idcliente'];
+	echo "<script>console.log('.$id.');</script>";
 	require("../conecta.php");
 	$resultado = mysqli_query($con, $mostrar);
 	while ($fila = mysqli_fetch_assoc($resultado)) {

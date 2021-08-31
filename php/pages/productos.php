@@ -1,7 +1,6 @@
 <?php
 require("../includes/navbar.php");
 ?>
-<script src="../../js/addProducto.js"></script>
 <div class="hero-wrap hero-bread" style="background-image: url('../../images/cesta1.jpg');">
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">

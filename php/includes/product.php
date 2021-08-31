@@ -1,8 +1,6 @@
 <?php
 require("../checkSession.php");
 $isLogged = !empty($user);
-$id = $_SESSION['idcliente'];
-echo "<script>console.log('.$id.');</script>";
 ?>
 
 <div class="col-md-6 col-lg-3 ftco-animate">
@@ -48,7 +46,8 @@ echo "<script>console.log('.$id.');</script>";
 						<span>
 							<i class="
 									<?php
-									if ($isLogged) {
+									//Ponemos true para seguir haciendo carrito, pero queda testear isLogged
+									if (true) {
 										$result = "ion-ios-cart";
 									} else {
 										$result = "ion-ios-log-in";
