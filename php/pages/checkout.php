@@ -1,5 +1,6 @@
 <?php
 require("../includes/navbar.php");
+require("../includes/calc_carrito.php");
 ?>
 
 <div class="hero-wrap hero-bread" style="background-image: url('../images/bg_1.jpg');">
@@ -24,7 +25,10 @@ require("../includes/navbar.php");
 			</div>
 			<div class="col-xl-5">
 				<div class="row mt-5 pt-3">
-					<div class="col-md-12 d-flex mb-5">
+					<?php
+						require("../includes/total_carrito.php");
+					?>
+					<!-- <div class="col-md-12 d-flex mb-5">
 						<div class="cart-detail cart-total p-3 p-md-4">
 							<h3 class="billing-heading mb-4">Total en el carrito</h3>
 							<p class="d-flex">
@@ -45,7 +49,7 @@ require("../includes/navbar.php");
 								<span>0.00</span>
 							</p>
 						</div>
-					</div>
+					</div> -->
 					<div class="col-md-12">
 						<div class="cart-detail p-3 p-md-4">
 							<h3 class="billing-heading mb-4">Método de pago</h3>
