@@ -1,6 +1,6 @@
 <?php
-require '../conecta.php';
 require("../checkSession.php");
+require '../conecta.php';
 require("../testSession.php");
 
 $isLogged = !empty($user);
