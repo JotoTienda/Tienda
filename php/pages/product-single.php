@@ -13,13 +13,11 @@ else:
     
     ?>
     <div class="row">
-
-
     
     <?php
     require("../includes/product.php");
 
-    echo "<div class='col-md-6'>".$fila."</div>";
+    echo "<div class='col-md-6'>".$fila["description"]."</div>";
     ?>
     </div>
 
