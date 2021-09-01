@@ -24,6 +24,7 @@ require("../includes/navbar.php");
 					<li><a href="./miel.php" class="active">Miel</a></li>
 					<li><a href="./productos.php">Productos de cercanía</a></li>
 					<li><a href="./alimentacion.php">Alimentación y bebidas</a></li>
+                    <li><a href="./cestaventa.php">Cestas</a></li>
 				</ul>
 			</div>
 		</div>

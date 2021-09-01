@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :q
-|2,0,1630073144,,"q"
+|2,0,1630492201,,"q"
 :Q
 |2,0,1630073141,,"Q"
 :qa!
@@ -29,22 +29,42 @@
 # Registers:
 
 # File marks:
-'0  6  3  ~/.gitignore
-|4,48,6,3,1630073144,"~/.gitignore"
+'0  1  12  ~/.git/MERGE_MSG
+|4,48,1,12,1630492201,"~/.git/MERGE_MSG"
 '1  6  3  ~/.gitignore
-|4,49,6,3,1630073129,"~/.gitignore"
-'2  1  8  ~/index.html
-|4,50,1,8,1629553270,"~/index.html"
+|4,49,6,3,1630073144,"~/.gitignore"
+'2  6  3  ~/.gitignore
+|4,50,6,3,1630073129,"~/.gitignore"
+'3  1  8  ~/index.html
+|4,51,1,8,1629553270,"~/index.html"
 
 # Jumplist (newest first):
+-'  1  12  ~/.git/MERGE_MSG
+|4,39,1,12,1630492201,"~/.git/MERGE_MSG"
 -'  6  3  ~/.gitignore
 |4,39,6,3,1630073144,"~/.gitignore"
+-'  6  3  ~/.gitignore
+|4,39,6,3,1630073144,"~/.gitignore"
+-'  6  3  ~/.gitignore
+|4,39,6,3,1630073129,"~/.gitignore"
 -'  6  3  ~/.gitignore
 |4,39,6,3,1630073129,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1630073122,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1630073122,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1630073122,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1630073122,"~/.gitignore"
+-'  1  8  ~/index.html
+|4,39,1,8,1629553270,"~/index.html"
+-'  1  8  ~/index.html
+|4,39,1,8,1629553270,"~/index.html"
+-'  1  8  ~/index.html
+|4,39,1,8,1629553270,"~/index.html"
+-'  1  8  ~/index.html
+|4,39,1,8,1629553270,"~/index.html"
 -'  1  8  ~/index.html
 |4,39,1,8,1629553270,"~/index.html"
 -'  1  8  ~/index.html
@@ -55,6 +75,10 @@
 |4,39,1,8,1629553270,"~/index.html"
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/MERGE_MSG
+	*	1630492197	0
+	"	1	12
 
 > ~/.gitignore
 	*	1630073141	0
