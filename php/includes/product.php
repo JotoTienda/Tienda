@@ -42,7 +42,10 @@ if ($isLogged) {
 							} else {
 								echo $fila["pre_ven"];
 							}
-							?> Euros/kg</span>
+							?> 
+							Euros/<?php 
+							echo $fila["modoventa"];
+							?></span>
 					</p>
 				</div>
 			</div>
