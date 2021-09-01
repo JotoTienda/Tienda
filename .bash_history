@@ -226,3 +226,29 @@ git push
 git pull
 git pull
 git push
+git status
+git add . "Jose Tomas add cestaventa"
+git ad
+git commit -m "Jose Tomas add cestaventa"
+git push
+git pull
+git log
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+git status
+git pull
+git log
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+git checkout '0980372'
+git checkout main
+git status
+git status
+git status
+git pull
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git status
+git push
