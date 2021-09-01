@@ -1,3 +1,7 @@
+<?php
+require("../includes/calc_carrito.php");
+
+?>
 <div class="col-lg-4 mt-5 cart-wrap ftco-animate">
     <div class="cart-total mb-3">
         <h3>Total del carrito</h3>
