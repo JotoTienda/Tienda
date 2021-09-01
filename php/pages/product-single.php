@@ -11,6 +11,8 @@ else:
     require("../includes/navbar.php");
 
     require("../includes/product.php");
+
+    echo "<p>".$fila["descripcion"]."</p>";
     
     require("../includes/main_footer.php");
 endif;
