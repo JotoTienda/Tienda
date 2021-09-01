@@ -6,6 +6,6 @@ productos.forEach(producto => {
 	producto.onclick = () => {
 		console.log(producto);
 		const idProducto=producto.querySelector(".d-none");
-		window.location.href=`http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.innerText}`;
+		//window.location.href=`http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.innerText}`;
 	};
 });
