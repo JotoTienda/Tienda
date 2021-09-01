@@ -1,4 +1,4 @@
-<?php 
+<?php
 $precioTotal = 0;
 if (isset($_COOKIE["carrito"])) {
     $carrito = json_decode($_COOKIE["carrito"]);
@@ -7,7 +7,7 @@ if (isset($_COOKIE["carrito"])) {
 
         $idProducto = $productos[$x]->{"id"};
         $cantidadProducto = $productos[$x]->{"cantidad"};
-        $mostrar = "SELECT * FROM productos WHERE idproducto=".$idProducto.";";
+        $mostrar = "SELECT * FROM productos WHERE idproducto=" . $idProducto . ";";
         $resultado = mysqli_query($con, $mostrar);
         while ($fila = mysqli_fetch_assoc($resultado)) {
             if ($fila["descuento"] > 0) {
@@ -18,4 +18,6 @@ if (isset($_COOKIE["carrito"])) {
             }
             $precioPorCantidad = $precioFinal * $cantidadProducto;
             $precioTotal += $precioPorCantidad;
-?>
+        }
+    }
+}
