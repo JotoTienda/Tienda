@@ -1,9 +1,14 @@
 <?php
 require("../conecta.php");
 require("../checkSession.php");
-/* $query = "SELECT * FROM clientes WHERE idcliente=21";
-$resultado = mysqli_query($con, $query);
-$fila = mysqli_fetch_assoc($resultado); */
+$query_login = 'SELECT * FROM clientes WHERE idcliente =21';
+
+$resultado = mysqli_query($con, $query_login);
+$fila = mysqli_fetch_assoc($resultado);
+$user = null;
+if (count($fila) > 0) {
+    $user = $fila;
+}
 
 ?>
 
@@ -11,7 +16,7 @@ $fila = mysqli_fetch_assoc($resultado); */
     <div class="col-md-6">
         <div class="form-group">
             <label for="firstname">Nombre</label>
-            <input type="text" class="form-control" placeholder="" name="cliente_nombre" id="cliente_nombre" disabled value="<?php echo $user["nombre"]?>">
+            <input type="text" class="form-control" placeholder="" name="cliente_nombre" id="cliente_nombre" disabled value="<?php echo $user["nombre"] ?>">
         </div>
     </div>
     <div class="col-md-6">
