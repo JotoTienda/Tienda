@@ -1,6 +1,8 @@
-import { disableAnchorChilds } from './xojeFunciones.js';
+import { disableAnchorChilds,addProduct } from './xojeFunciones.js';
 
 const productos = document.querySelectorAll('.product');
+const btn_add=producto.querySelector(".buy-now");
+
 productos.forEach(producto => {
 	disableAnchorChilds(producto);
 	producto.onclick = (e = new Event("click")) => {
