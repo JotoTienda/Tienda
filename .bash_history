@@ -186,3 +186,43 @@ git pull
 git pull
 git pul√l
 git pull
+git status
+git add .
+git commit -m "Jose tomas edit index" 
+git push
+git status
+git pull
+git status
+git pull
+git pull
+git pull
+git pull
+git status
+git add .
+git commit -m "Jose Tomas add images and edit shop"
+git push
+git pull
+git status
+git add .
+git commit -m "Jose Tomas create miel"
+git push
+git status
+git add .
+git commit -m "Jose Tomas edit frutas"
+git push
+git status
+git push
+git pull
+git status
+git status
+git pull
+git status
+git pull
+git status
+git push
+git push
+clear
+git push
+git pull
+git pull
+git push

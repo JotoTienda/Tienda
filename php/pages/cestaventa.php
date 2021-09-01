@@ -28,6 +28,7 @@ require("../includes/navbar.php");
 					<li><a href="./shop.php">Todo</a></li>
 					<li><a href="./vegetales.php">Vegetales</a></li>
 					<li><a href="./frutas.php" >Frutas</a></li>
+                    <li><a href="./miel.php" >Miel</a></li>
 					<li><a href="./productos.php">Productos de cercanía</a></li>
 					<li><a href="./alimentacion.php">Alimentación y bebidas</a></li>
                     <li><a href="./cestaventa.php" class="active">Cestas</a></li>
