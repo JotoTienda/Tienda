@@ -1,6 +1,6 @@
 <?php
 require("../conecta.php");
-require("../checkSession.php");
+/* require("../checkSession.php") */;
 $query_login = 'SELECT * FROM clientes WHERE idcliente =21';
 
 $resultado = mysqli_query($con, $query_login);
