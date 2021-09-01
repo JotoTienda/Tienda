@@ -10,10 +10,20 @@ else:
     echo "<script defer type='module' src='../../js/addProducto.js'></script>";
     require("../includes/navbar.php");
 
+    
+    ?>
+    <div class="row">
+
+
+    
+    <?php
     require("../includes/product.php");
 
-    echo "<p>".$fila["descripcion"]."</p>";
-    
+    echo "<div class='col-md-6'>".$fila."</div>";
+    ?>
+    </div>
+
+    <?php
     require("../includes/main_footer.php");
 endif;
     
