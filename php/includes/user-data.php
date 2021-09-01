@@ -49,7 +49,7 @@ if (count($fila) > 0) {
         <div class="col-md-6">
             <div class="form-group">
                 <label for="streetaddress">Dirección</label>
-                <input type="text" class="form-control" placeholder="" name="cliente_direccion" id="cliente_direccion" disabled value="<?php echo $user["direc"] ?>">
+                <input type="text" class="form-control" placeholder="" name="cliente_direccion" id="cliente_direccion" disabled value="<?php echo $user["Direc"] ?>">
             </div>
         </div>
         <!--<div class="col-md-6">
@@ -61,26 +61,26 @@ if (count($fila) > 0) {
         <div class="col-md-6">
             <div class="form-group">
                 <label for="towncity">Ciudad</label>
-                <input type="text" class="form-control" placeholder="" name="cliente_ciudad" id="cliente_ciudad" disabled value="<?php echo $user["ciu_cli"] ?>">
+                <input type="text" class="form-control" placeholder="" name="cliente_ciudad" id="cliente_ciudad" disabled value="<?php echo $user["Ciu_Cli"] ?>">
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="postcodezip">Codigo postal</label>
-                <input type="text" class="form-control" placeholder="" name="cliente_cPostal" id="cliente_cPostal" disabled value="<?php echo $user["codigop"] ?>">
+                <input type="text" class="form-control" placeholder="" name="cliente_cPostal" id="cliente_cPostal" disabled value="<?php echo $user["Codigop"] ?>">
             </div>
         </div>
         <div class="w-100"></div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="phone">Teléfono</label>
-                <input type="text" class="form-control" placeholder="" name="cliente_telefono" id="cliente_telefono" disabled value="<?php echo $user["tele"] ?>">
+                <input type="text" class="form-control" placeholder="" name="cliente_telefono" id="cliente_telefono" disabled value="<?php echo $user["Tele"] ?>">
             </div>
         </div>
         <div class="col-md-6">
             <div class="form-group">
                 <label for="emailaddress">Direción de Email </label>
-                <input type="text" class="form-control" placeholder="" name="cliente_email" id="cliente_email" disabled value="<?php echo $user["correo/*  */"] ?>">
+                <input type="text" class="form-control" placeholder="" name="cliente_email" id="cliente_email" disabled value="<?php echo $user["correo"] ?>">
             </div>
         </div>
         <div class="w-100"></div>
@@ -93,3 +93,4 @@ if (count($fila) > 0) {
 				</div>
 			</div> -->
     </div>
+</div>
