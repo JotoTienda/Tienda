@@ -264,3 +264,17 @@ git commit -m "Jose Tomas edit  cestaventa"
 git push
 git status
 git pull
+git status
+git add .
+git commit -m "Jose tomas edit index and cesta"
+git push
+git pull
+git pull
+git pull
+git status
+git pull
+git pull
+git pull
+git add .
+git status
+git pull
