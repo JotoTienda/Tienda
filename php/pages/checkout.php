@@ -17,7 +17,7 @@ require("../includes/navbar.php");
 	<div class="container">
 		<div class="row justify-content-center">
 			<div class="col-xl-7 ftco-animate">
-				<form action="completar_compra.php" class="billing-form" id="billing-form">
+				<form action="proceso_venta.php" class="billing-form" id="billing-form">
 					<h3 class="mb-4 billing-heading">Detalles de la cuenta</h3>
 					<?php require("../includes/user-data.php") ?>
 				</form>
