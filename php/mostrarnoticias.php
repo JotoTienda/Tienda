@@ -70,20 +70,18 @@ $mostrar = "select titulo, cabecera, texto, foto from noticias order by num_id d
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="../index.html" class="nav-link">Inicio</a></li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
+						<a class="nav-link dropdown-toggle" href="./pages/shop.php" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
 						<div class="dropdown-menu" aria-labelledby="dropdown04">
-							<a class="dropdown-item" href="shop.html">Verdura</a>
-							<a class="dropdown-item" href="Fruta.html">Frutas</a>
-							<a class="dropdown-item" href="alimentos.html">Productos de cernanía</a>
-							<a class="dropdown-item" href="product-single.html">Productos</a>
-							<a class="dropdown-item" href=".../php/cart.php">Carrito</a>
-							<a class="dropdown-item" href="checkout.php">Compra final</a>
+							<a class="dropdown-item" href="../pages/shop.php">tienda</a>
+							<a class="dropdown-item" href="../pages/frutas.php">Fruta</a>
+							<a class="dropdown-item" href="../pages/productos.php">Productos de cernanía</a>
+							<a class="dropdown-item" href="../pages/cart.php">Carrito</a>
+							<a class="dropdown-item" href="../pages/checkout.php">Compra final</a>
 						</div>
 					</li>
-					<li class="nav-item active"><a href="about.html" class="nav-link">Acerca de nosotros</a></li>
-					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
-					<li class="nav-item"><a href="contact.html" class="nav-link">Contacto</a></li>
-					<li class="nav-item cta cta-colored"><a href=".../php/cart.php" class="nav-link" id="logo_cart"><span class="icon-shopping_cart"></span>[0]</a></li>
+					<li class="nav-item"><a href="../html/blog.html" class="nav-link">Blog</a></li>
+					<li class="nav-item"><a href="../html/contact.html" class="nav-link">Contacto</a></li>
+					<li class="nav-item cta cta-colored"><a href="../php/pages/cart.php" class="nav-link" id="logo_cart"><span class="icon-shopping_cart"></span>[0]</a></li>
 
 				</ul>
 			</div>

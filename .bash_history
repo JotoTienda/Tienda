@@ -278,3 +278,10 @@ git pull
 git add .
 git status
 git pull
+git status
+git add .
+git status
+git commit -m "Jose Tomas Interlinking updates"
+git push
+git status
+git pull
