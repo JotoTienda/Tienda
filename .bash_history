@@ -121,3 +121,68 @@ git pull
 git pull
 git pull
 git status
+git status
+git add .
+git commit -m "Jose Tomas interactuacion"
+git push
+ git config --global user.name
+ git config --global user.email
+git config --global user.email
+git push
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+clear
+clear
+clear
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git log
+clear
+git pull
+git pull
+git pull
+git pull
+git pull
+clear
+git pull
+clear
+git pull
+git pull
+git pull
+git status
+git pull
+git status
+git add images/*
+git commit -m "Jose Tomas add images"
+git push
+git status
+git add images/+
+git add images/*
+git status
+git commit -m "Jose Tomas add images"
+git push
+git push
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git status
+git pull
+git pull
+git pul√l
+git pull
