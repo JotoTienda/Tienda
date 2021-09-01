@@ -24,8 +24,7 @@ if (isset($_COOKIE["carrito"])) {
                     <a href="#"><span class="ion-ios-close"></span></a>
                 </td>
                 <td class="image-prod">
-                    <div class="img" style="background-image: url(../../images/
-                    <?php echo $fila["foto_p"]; ?>)"></div>
+                    <div class="img" style="background-image: url(../../images/<?php echo $fila["foto_p"]; ?>)"></div>
                 </td>
                 <td class="product-name">
                     <h3><?php echo $fila["producto"]; ?></h3>
