@@ -6,7 +6,7 @@ require("../includes/navbar.php");
 	<div class="container">
 		<div class="row no-gutters slider-text align-items-center justify-content-center">
 			<div class="col-md-9 ftco-animate text-center">
-				<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Inicio</a></span> <span>Frutas</span></p>
+				<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Inicio</a></span> <span>Las frutas se venden por medio kilogramo mínimo o aquellos que son unidades  como medio melón o un kiwi</span></p>
 				<h1 class="mb-0 bread">Frutas</h1>
 			</div>
 		</div>
