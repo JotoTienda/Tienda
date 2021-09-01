@@ -1,10 +1,10 @@
 <?php
+session_start();
 
 require ("conecta.php");// inserta el código php de la página conecta.php
 require ("valida_campos.php");
 require("test_input.php");
 
-session_start();
 if(isset($_POST))// esto es lo mismo que if(!_POST)$_SERVER["REQUEST_METHOD"]=="POST"
 {
     //echo "viene por post";

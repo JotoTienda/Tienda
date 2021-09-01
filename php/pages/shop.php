@@ -1,5 +1,8 @@
 <?php
 require("../includes/navbar.php");
+require("../testSession.php");
+
+
 ?>
 <div class="hero-wrap hero-bread" style="background-image: url('../../images/bg_1.jpg');">
 	<div class="container">
@@ -22,7 +25,7 @@ require("../includes/navbar.php");
 					<li><a href="./miel.php">Miel</a></li>
 					<li><a href="./productos.php">Productos de cercanía</a></li>
 					<li><a href="./alimentacion.php">Alimentación y bebidas</a></li>
-                    <li><a href="./cestasventa.php">Cestas</a></li>
+					<li><a href="./cestasventa.php">Cestas</a></li>
 				</ul>
 			</div>
 		</div>
