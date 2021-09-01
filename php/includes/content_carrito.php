@@ -37,7 +37,7 @@ if (isset($_COOKIE["carrito"])) {
                 <td class="quantity">
                     <?php echo $cantidadProducto; ?>
                 </td>
-                <td class="total">$<?php echo $precioPorCantidad; ?></td>
+                <td class="total"><?php echo $precioPorCantidad; ?>€</td>
             </tr>
 <?php
         }
