@@ -1,8 +1,6 @@
 <?php
 session_start();
 if (isset($_SESSION['idcliente'])) {
-	echo "<script>alert('isset');</script>";
-
 	$query_login = 'SELECT * FROM clientes WHERE idcliente =' . $_SESSION['idcliente'];
 	$resultado = mysqli_query($con, $query_login);
 	$fila = mysqli_fetch_assoc($resultado);
