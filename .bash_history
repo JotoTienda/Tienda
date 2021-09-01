@@ -252,3 +252,15 @@ git pull
 git pull
 git status
 git push
+git status
+git add .
+git commit -m "Jose Tomas edit index & add cestaventa"
+git push
+git push
+git push
+git status
+git add .
+git commit -m "Jose Tomas edit  cestaventa"
+git push
+git status
+git pull
