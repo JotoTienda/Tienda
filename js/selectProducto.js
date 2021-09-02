@@ -7,11 +7,8 @@ productos.forEach(producto => {
 		addProduct(producto);
 	};
 	producto.onclick = (e = new Event("click")) => {
-		if (e.target.classList.contains("ion-ios-cart")) {
-			alert("Hola");
-		} else {
+		if (!e.target.classList.contains("ion-ios-cart")) {
 			const idProducto = producto.querySelector(".d-none");
-
 			window.location.href = `http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.innerText}`;
 		}
 	};
