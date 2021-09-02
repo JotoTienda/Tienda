@@ -19,7 +19,7 @@ if (isset($_COOKIE["carrito"])) {
             $precioPorCantidad = $precioFinal * $cantidadProducto;
             $precioTotal += $precioPorCantidad;
 ?>
-            <script src="../../js/remove_producto.js"></script>
+            <script type="module" defer src="../../js/remove_producto.js"></script>
             <tr class="text-center">
                 <td class="product-remove">
                     <a href="#"><span class="ion-ios-close"></span></a>
