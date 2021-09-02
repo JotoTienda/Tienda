@@ -33,9 +33,13 @@ export function addProduct(newProduct = { id: '', precio: 0 }) {
 export function removeProduct(id = '') {
 	let carrito = getCookie('carrito');
 	carrito = JSON.parse(carrito);
+	const updateProducts=[];
 	carrito.productos.forEach(producto => {
-		if (producto.id == newProduct.id) { alert("") }
+		if (producto.id != id) { 
+			updateProducts.push(producto);
+		}
 	});
+	carrito.productos=updateProducts;
 	setCookie('carrito', carrito);
 	actualizaNumCarrito();
 }
