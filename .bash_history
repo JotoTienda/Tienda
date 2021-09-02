@@ -285,3 +285,43 @@ git commit -m "Jose Tomas Interlinking updates"
 git push
 git status
 git pull
+git status
+git add .
+git commit -m 
+git commit -m "Jose Tomas edit html"
+git push
+git status
+git pull 
+git pull 
+git status
+git pull 
+git pull 
+git pull 
+git pull 
+git pull 
+git pull 
+git pull 
+git pull 
+git checkout 31fe9b7
+git status
+git status
+git checkout master
+git checkout main
+git status
+git status
+git pull
+git pull
+git man
+2+3
+git log
+clear
+ls
+pwq
+pwd
+git status
+git add .
+git commit -m "edit cart JT"
+git push
+fatal: unable to access 'https://github.com/JotoTienda/Tienda.git/': Could not resolve host: github.com
+ping github.com
+ping github.com
