@@ -1,5 +1,7 @@
-export function addProduct(newProduct = { id: '', precio: 0 }) {
+export function addProduct(newProduct = { id: '', precio: 0,modo_venta:'' }) {
 	let carrito = getCookie('carrito');
+	const isInUnidad='Unidad'==newProduct.modo_venta;
+	const cantidad=(isInUnidad)?1:0.5;
 	if (!carrito) {
 		let data = {
 			cliente: {
@@ -9,7 +11,7 @@ export function addProduct(newProduct = { id: '', precio: 0 }) {
 		};
 		data.productos.push({
 			id: newProduct.id,
-			cantidad: 1,
+			cantidad: cantidad,
 			coste: newProduct.precio,
 		});
 		setCookie('carrito', data);
@@ -18,13 +20,13 @@ export function addProduct(newProduct = { id: '', precio: 0 }) {
 		carrito = JSON.parse(carrito);
 		carrito.productos.forEach(producto => {
 			if (producto.id == newProduct.id) {
-				producto.cantidad++;
+				producto.cantidad+=cantidad;
 				producto.coste += producto.coste;
 				aumentado = true;
 			}
 		});
 		if (!aumentado) {
-			carrito.productos.push({ id: newProduct.id, cantidad: 1 });
+			carrito.productos.push({ id: newProduct.id, cantidad: cantidad });
 		}
 		setCookie('carrito', carrito);
 	}

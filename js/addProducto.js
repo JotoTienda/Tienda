@@ -4,16 +4,15 @@ const btn_add = producto.querySelector(".buy-now");
 const btn_cart = btn_add.querySelector(".ion-ios-cart");
 disableAnchorChilds(producto);
 
-btn_add.onclick = (e=new Event("click")) => {
-    console.log(e.target);
-    alert("Stop 0");
+btn_add.onclick = (e = new Event("click")) => {
+
     if (btn_cart) {
         const id = producto.querySelector(".d-none").innerText;
         const precio = parseInt(producto.querySelector(".price-sale").innerText);
-        const modo_venta=producto.querySelector(".price-sale").innerText.split('/')[1];
+        const modo_venta = producto.querySelector(".price-sale").innerText.split('/')[1];
         console.log(modo_venta);
         alert("Stop");
-        addProduct({ id, precio });
+        addProduct({ id, precio, modo_venta });
     } else {
         //window.location.href = "http://fruitbenidorm.es/php/pages/shop.php";
     }
