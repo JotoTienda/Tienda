@@ -2,7 +2,7 @@
 
     if(!$_POST){
 
-        header("Location:registro.html");
+        header("Location:./php/pages/registro.php");
     }
    
     $nombre=$_POST["nombre"];

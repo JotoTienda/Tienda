@@ -121,7 +121,7 @@
 					</div>
 				</li>
 				<li class="nav-item">
-					<a href="../../html/registro.html" class="nav-link">Registrarse</a>
+					<a href="../pages/registro.php" class="nav-link">Registrarse</a>
 				</li>
 				<li class="nav-item">
 					<a href="../../html/blog.html" class="nav-link">Blog</a>
