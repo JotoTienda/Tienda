@@ -65,29 +65,10 @@ require("../includes/navbar.php");
 					<a href="pages/checkout.php" class="btn btn-primary py-3 px-4">Aplica el Cupón</a>
 				</p>
 			</div>
-			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-				<div class="cart-total mb-3">
-					<h3>Estimación de envio y IVA</h3>
-					<p>Introduce tu dirreción</p>
-					<form action="#" class="info">
-						<div class="form-group">
-							<label for="">País</label>
-							<input type="text" class="form-control text-left px-3" placeholder="" />
-						</div>
-						<div class="form-group">
-							<label for="country">Provincia</label>
-							<input type="text" class="form-control text-left px-3" placeholder="" />
-						</div>
-						<div class="form-group">
-							<label for="country">Código Postal</label>
-							<input type="text" class="form-control text-left px-3" placeholder="" />
-						</div>
-					</form>
-				</div>
-				<p>
-					<a href="pages/checkout.php" class="btn btn-primary py-3 px-4">Estimación</a>
-				</p>
-			</div>
+          
+			
+				
+			</div>*/
 			<?php require("../includes/total_carrito.php");?>
 		</div>
 	</div>
