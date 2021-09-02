@@ -1,10 +1,11 @@
-import { disableAnchorChilds,addProduct } from './xojeFunciones.js';
+import { disableAnchorChilds, addProduct } from './xojeFunciones.js';
 
 const productos = document.querySelectorAll('.product');
-const btn_add=producto.querySelector(".buy-now");
 
 productos.forEach(producto => {
 	disableAnchorChilds(producto);
+	const btn_add = producto.querySelector(".buy-now");
+
 	producto.onclick = (e = new Event("click")) => {
 
 		if (e.target.classList.contains("ion-ios-cart")) {
