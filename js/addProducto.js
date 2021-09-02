@@ -3,7 +3,10 @@ const producto = document.querySelector(".product");
 const btn_add = producto.querySelector(".buy-now");
 const btn_cart = btn_add.querySelector(".ion-ios-cart");
 disableAnchorChilds(producto);
-btn_add.onclick = () => {
+
+btn_add.onclick = (e=new Event("click")) => {
+    console.log(e.target);
+    alert("Stop 0");
     if (btn_cart) {
         const id = producto.querySelector(".d-none").innerText;
         const precio = parseInt(producto.querySelector(".price-sale").innerText);
@@ -12,6 +15,6 @@ btn_add.onclick = () => {
         alert("Stop");
         addProduct({ id, precio });
     } else {
-        window.location.href = "http://fruitbenidorm.es/php/pages/shop.php";
+        //window.location.href = "http://fruitbenidorm.es/php/pages/shop.php";
     }
 };
