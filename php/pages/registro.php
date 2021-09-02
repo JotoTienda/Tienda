@@ -23,7 +23,7 @@ if ($isLogged) {
 			<input type="text" name="Tele" id="Tele" placeholder="Teléfono" class="i48" required>
 			<input type="text" name="Codigop" id="Codigop" placeholder="Código Postal" class="i48" required>
 			<input type="submit" id="guardar" value="Guarda" class="enviar" onclick="return enviar();">
-			<p class="enlace"> ¿Tiene ya una cuenta? <a href="./php/clientes.php">Entre Aquí</a></p>
+			<p class="enlace"> ¿Tiene ya una cuenta? <a href="clientes.php">Entre Aquí</a></p>
 
 			<br>
 
