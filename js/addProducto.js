@@ -7,12 +7,7 @@ disableAnchorChilds(producto);
 btn_add.onclick = (e = new Event("click")) => {
 
     if (btn_cart) {
-        const id = producto.querySelector(".d-none").innerText;
-        const precio = parseInt(producto.querySelector(".price-sale").innerText);
-        const modo_venta = producto.querySelector(".price-sale").innerText.split('/')[1];
-        console.log(modo_venta);
-        alert("Stop");
-        addProduct({ id, precio, modo_venta });
+        addProduct(producto);
     } else {
         //window.location.href = "http://fruitbenidorm.es/php/pages/shop.php";
     }

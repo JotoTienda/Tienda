@@ -1,4 +1,11 @@
-export function addProduct(newProduct = { id: '', precio: 0,modo_venta:'' }) {
+export function addProduct(product) {
+	const newProduct={
+		 id : product.querySelector(".d-none").innerText,
+         precio : parseInt(product.querySelector(".price-sale").innerText),
+         modo_venta : product.querySelector(".price-sale").innerText.split('/')[1]
+	}
+	
+
 	let carrito = getCookie('carrito');
 	const isInUnidad='Unidad'==newProduct.modo_venta;
 	const cantidad=(isInUnidad)?1:0.5;
