@@ -19,10 +19,16 @@ if (isset($_COOKIE["carrito"])) {
             $precioPorCantidad = $precioFinal * $cantidadProducto;
             $precioTotal += $precioPorCantidad;
 ?>
+            <script src="../../js/remove_producto.js"></script>
             <tr class="text-center">
                 <td class="product-remove">
                     <a href="#"><span class="ion-ios-close"></span></a>
                 </td>
+                <span class="d-none">
+                    <?php
+                    echo $fila["idproducto"];
+                    ?>
+                </span>
                 <td class="image-prod">
                     <div class="img" style="background-image: url(../../images/<?php echo $fila["foto_p"]; ?>)"></div>
                 </td>

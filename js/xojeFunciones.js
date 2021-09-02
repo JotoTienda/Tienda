@@ -3,7 +3,7 @@ export function addProduct(newProduct = { id: '', precio: 0 }) {
 	if (!carrito) {
 		let data = {
 			cliente: {
-				id:sessionStorage.getItem('idcliente')
+				id: sessionStorage.getItem('idcliente')
 			},
 			productos: [],
 		};
@@ -28,6 +28,15 @@ export function addProduct(newProduct = { id: '', precio: 0 }) {
 		}
 		setCookie('carrito', carrito);
 	}
+	actualizaNumCarrito();
+}
+export function removeProduct(id = '') {
+	let carrito = getCookie('carrito');
+	carrito = JSON.parse(carrito);
+	carrito.productos.forEach(producto => {
+		if (producto.id == newProduct.id) { alert("") }
+	});
+	setCookie('carrito', carrito);
 	actualizaNumCarrito();
 }
 export function getCookie(cname) {
@@ -129,13 +138,13 @@ export function printTotal() {
 	if (carrito) {
 		carrito = JSON.parse(carrito);
 		const productos = carrito.productos;
-		productos.forEach(producto => {});
+		productos.forEach(producto => { });
 	}
 }
 export function checkIsLogged() {
 	const login = getCookie('isLogged');
 }
-export function disableAnchorChilds(wrapper=document.createElement("div")) {
+export function disableAnchorChilds(wrapper = document.createElement("div")) {
 	const hijosWrapper = wrapper.querySelectorAll('a');
 	hijosWrapper.forEach(hijo => {
 		hijo.onclick = e => {
@@ -143,3 +152,4 @@ export function disableAnchorChilds(wrapper=document.createElement("div")) {
 		};
 	});
 }
+
