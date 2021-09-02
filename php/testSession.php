@@ -5,4 +5,4 @@ if (!isset($_SESSION["num"])) {
 } else {
 	$_SESSION["num"]++;
 }
-echo "<script>console.log(num SESSION: ".$_SESSION["num"].")</script>";
+echo "<script>console.log('num SESSION: ".$_SESSION["num"]."');</script>";
