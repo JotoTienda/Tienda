@@ -9,6 +9,6 @@ btn_add.onclick = (e = new Event("click")) => {
     if (btn_cart) {
         addProduct(producto);
     } else {
-        //window.location.href = "http://fruitbenidorm.es/php/pages/shop.php";
+        window.location.href = "http://fruitbenidorm.es/php/pages/shop.php";
     }
 };
