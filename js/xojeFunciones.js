@@ -63,7 +63,7 @@ export function setCookie(cname, cvalue) {
 	d.setTime(d.getTime() + 30 * 60 * 1000);
 	let expires = 'expires=' + d.toUTCString();
 	document.cookie =
-		cname + '=' + JSON.stringify(cvalue) + ';' + expires + ';path=/';
+		cname + '=' + JSON.stringify(cvalue) + ';' + expires + ';path=/;secure';
 }
 export function actualizaNumCarrito() {
 	const logoCarrito = document.getElementById('logo_cart');
