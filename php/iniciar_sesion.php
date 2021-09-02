@@ -9,12 +9,11 @@ require("test_input.php");
 if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 	$user_input = TestInput($_POST['usuario']);
 	$pass_input = TestInput($_POST['clave']);
-	echo "bruto:".$_POST['usuario']." - ".$_POST['clave'];
-	echo "<p>limpio: ".$user_input." - ".$pass_input."</p>";
 	$query_login = "SELECT * from clientes WHERE usuario='$user_input';";
 
 	$resultado = mysqli_query($con, $query_login);
 	$fila = mysqli_fetch_assoc($resultado);
+	echo "<p>limpio: ".$user_input." - ".$pass_input."</p>";
 
 	$message = '';
 	if (count($fila) > 0 && password_verify($pass_input, $fila['clave'])) {
@@ -27,7 +26,6 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 		echo $message;
 	}
 }
-echo "<script>alert('Stop')</script>";
 /* 
 
 $user_input = $_POST['usuario'];
