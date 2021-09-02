@@ -45,6 +45,9 @@
 							<i class="
 									<?php
 									//Ponemos true para seguir haciendo carrito, pero queda testear isLogged
+									if ($isLogged) {
+										echo "<script>alert('Funciona')</script>";
+									}
 									if (true) {
 										$result = "ion-ios-cart";
 									} else {
