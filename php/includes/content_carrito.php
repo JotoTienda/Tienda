@@ -24,16 +24,16 @@ if (isset($_COOKIE["carrito"])) {
                 <td class="product-remove">
                     <a href="#"><span class="ion-ios-close"></span></a>
                 </td>
-                <span class="d-none">
-                    <?php
-                    echo $fila["idproducto"];
-                    ?>
-                </span>
                 <td class="image-prod">
                     <div class="img" style="background-image: url(../../images/<?php echo $fila["foto_p"]; ?>)"></div>
                 </td>
                 <td class="product-name">
                     <h3><?php echo $fila["producto"]; ?></h3>
+                    <span class="d-none">
+                        <?php
+                        echo $fila["idproducto"];
+                        ?>
+                    </span>
                     <p>
                         De las montañas de Alicante hasta nuestra Costa Blanca Tomates,
                         Naranjas, Turrones, Dátiles, Chocolates...
