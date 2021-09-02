@@ -1,5 +1,5 @@
 <?php
-
+require("../checkSession.php");
 require("../conecta.php");
 
 $mostrar = "SELECT foto_p, descuento, producto, pre_ven, modoventa from productos WHERE categoria='cesta';";

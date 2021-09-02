@@ -1,14 +1,3 @@
-<?php
-require("../checkSession.php");
-$isLogged = !empty($user);
-$id = $_SESSION['idcliente'];
-if ($isLogged) {
-	echo "<script>console.log('id:$id');</script>";
-} else {
-	echo "<script>console.log('no conectado');</script>";
-}
-?>
-
 <div class="col-md-6 col-lg-3 ftco-animate">
 	<div class="product">
 		<span class="d-none">

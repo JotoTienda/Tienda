@@ -8,4 +8,5 @@ if (isset($_SESSION['idcliente'])) {
 	if (count($fila) > 0) {
 		$user = $fila;
 	}
+	$isLogged = !empty($user);
 }

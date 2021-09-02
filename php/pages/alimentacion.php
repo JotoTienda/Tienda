@@ -1,4 +1,5 @@
 <?php
+require("../checkSession.php");
 require("../includes/navbar.php");
 ?>
 

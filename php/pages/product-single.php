@@ -1,4 +1,6 @@
 <?php
+require("../checkSession.php");
+
 $id=$_GET["id"];
 if (!isset($id) || empty($id)) :
     header("location:http://fruitbenidorm.es/php/pages/shop.php");
