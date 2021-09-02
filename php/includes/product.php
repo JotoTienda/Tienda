@@ -56,7 +56,7 @@ if ($isLogged) {
 							<i class="
 									<?php
 									//Ponemos true para seguir haciendo carrito, pero queda testear isLogged
-									if ($isLogged) {
+									if (true) {
 										$result = "ion-ios-cart";
 									} else {
 										$result = "ion-ios-log-in";
