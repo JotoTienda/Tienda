@@ -5,7 +5,7 @@ if ($isLogged) {
 } else {
 	require("../includes/navbar.php");
 ?>
-	<link rel="stylesheet" href="../css/resgitroResponsive.css"><!-- Este archivo no esta en el servidor -->
+	<link rel="stylesheet" href="../../css/resgitroResponsive.css"><!-- Este archivo no esta en el servidor -->
 
 	<div id="errores" class="row block-8" style="padding: 20px;"></div>
 	<h1>Formulario de Registro</h1>
