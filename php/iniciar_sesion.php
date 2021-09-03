@@ -16,15 +16,19 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 	echo "<p>limpio: ".$user_input." - ".$pass_input."</p>";
 
 	$message = '';
+	$path='';
 	if (count($fila) > 0 && password_verify($pass_input, $fila['clave'])) {
 		$_SESSION['idcliente'] = $fila['idcliente'];
 		$_COOKIE['carrito'] = array("cliente" => array("id" => $_SESSION['idcliente']), "productos" => array());
-		header('Location: ./pages/shop.php');
+		$path="./pages/shop.php";
+		header('Location: '.$path);
+
 		exit();
 	} else {
 		$message = 'Sorry, those credentials do not match';
 		echo $message;
 	}
+
 }
 /* 
 
