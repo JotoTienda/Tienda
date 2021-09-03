@@ -20,7 +20,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 		$_SESSION['idcliente'] = $fila['idcliente'];
 		$_COOKIE['carrito'] = array("cliente" => array("id" => $_SESSION['idcliente']), "productos" => array());
 		$path = "./pages/shop.php";
-		echo "<p>Session: " . $_SESSION['idcliente'] . " - Carrito " . $_COOKIE['carrito']["id"] . "</p>";
+		echo "<p>Session: " . $_SESSION['idcliente'] . " - Carrito " . $_COOKIE['carrito']["cliente"]["id"] . "</p>";
 
 		header('Location: ' . $path);
 
