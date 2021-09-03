@@ -4,7 +4,23 @@ if ($isLogged) {
 	header("location: shop.php");
 } else {
 	require("../includes/navbar.php");
+	echo "<script>
+	var cssId = 'myCss';  // you could encode the css path itself to generate id..
+if (!document.getElementById(cssId))
+{
+    var head  = document.getElementsByTagName('head')[0];
+    var link  = document.createElement('link');
+    link.id   = cssId;
+    link.rel  = 'stylesheet';
+    link.type = 'text/css';
+    link.href = 'http://website.com/css/stylesheet.css';
+    link.media = 'all';
+    head.appendChild(link);
+}
+	
+	</script>";
 ?>
+
 	<link rel="stylesheet" href="../../css/resgitroResponsive.css"><!-- Este archivo no esta en el servidor -->
 
 	<div id="errores" class="row block-8" style="padding: 20px;"></div>

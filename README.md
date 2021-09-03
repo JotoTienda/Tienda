@@ -1,5 +1,9 @@
 # JTomasFruteria
 
-contar repetidos
-https://dev.to/huyddo/find-duplicate-or-repeat-elements-in-js-array-3cl3
-# Tienda
+# Objetivos
+- linkar singin css
+- Que el login funcione
+- Que al completar venta guarde en base de datos y reste los productos gastados
+- Que lleguen los datos para la pasarela de pagos
+- Conectar la pasarela de pagos
+
