@@ -55,33 +55,27 @@ require("../includes/navbar.php");
 							<div class="form-group">
 								<div class="col-md-12">
 									<div class="radio">
-										<label><input type="radio" name="optradio" class="mr-2"> Transferencia Bancaria</label>
+										<label><input type="radio" name="optradio" class="mr-2"> Visa o Mastercard</label>
 									</div>
 								</div>
 							</div>
 							<div class="form-group">
 								<div class="col-md-12">
 									<div class="radio">
-										<label><input type="radio" name="optradio" class="mr-2"> Bizum</label>
+										<label><input type="radio" name="optradio" class="mr-2"> Bizum (Proxímamente)</label>
 									</div>
 								</div>
 							</div>
-							<div class="form-group">
-								<div class="col-md-12">
-									<div class="radio">
-										<label><input type="radio" name="optradio" class="mr-2"> Paypal</label>
-									</div>
-								</div>
-							</div>
+							
 							<div class="form-group">
 								<div class="col-md-12">
 									<div class="checkbox">
-										<label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
+										<label><input type="checkbox" value="" class="mr-2"> He leido y acecpto las condiciones</label>
 									</div>
 								</div>
 							</div>
 							<p>
-								<button type="submit" class="btn btn-primary py-3 px-4">Place an order</button>
+								<button type="submit" class="btn btn-primary py-3 px-4">Relizar el pedido</button>
 							</p>
 						</div>
 					</div>

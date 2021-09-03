@@ -382,3 +382,14 @@ git status
 git push
 git pull
 git pull
+git status
+git add .
+git commit -m "JT swap bombones images"
+git push
+git push
+git status
+git add .
+git commit -m "add registro css"
+git push
+git pull
+git pull
