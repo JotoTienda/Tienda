@@ -22,17 +22,17 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 		$expiracion = time() + 60 * 30;
 		$ruta = '/';
 		$dominio = "fruitbenidorm.es";
-		// Sólo envía la cookie con conexión HTTPs
 		$seguridad = false;
-		// Cookie disponible sólo para el protocolo HTTP
 		$solohttp = true;
 		setcookie($nombre, $valor, $expiracion, $ruta, $dominio, $seguridad, $solohttp);
-		echo "Cookie establecida";
 		$_SESSION['idcliente'] = $fila['idcliente'];
-		$path = "./pages/shop.php";
 		echo "<p>Session: " . $_SESSION['idcliente'] . " - Carrito " . $_COOKIE['carrito']["cliente"]["id"] . "</p>";
 
+		$path = "./pages/shop.php";
 		header('Location: ' . $path);
+		$path = "./pages/clientes.php";
+
+		echo "<script>window.location.href=" . $path . "</script>";
 
 		exit();
 	} else {
