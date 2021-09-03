@@ -325,3 +325,60 @@ git push
 fatal: unable to access 'https://github.com/JotoTienda/Tienda.git/': Could not resolve host: github.com
 ping github.com
 ping github.com
+git status
+git status
+git commit -m "night edit"
+git push
+git status
+git pull
+git status
+git pull
+git push
+git status
+git pull
+git pull
+git status
+git add .
+git commit -m "JT deleted registro"
+git push
+git pull
+git pull
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git status
+git pull
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git status
+git add images/bombones_surtido_valor.jpg 
+git commit -m "JT add bombones img"
+git push
+git pull
+git pull
+git push
+git stattus
+git status
+git push
+git pull
+git pull
