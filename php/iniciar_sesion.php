@@ -13,22 +13,22 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 
 	$resultado = mysqli_query($con, $query_login);
 	$fila = mysqli_fetch_assoc($resultado);
-	echo "<p>limpio: ".$user_input." - ".$pass_input."</p>";
 
 	$message = '';
-	$path='';
+	$path = '';
 	if (count($fila) > 0 && password_verify($pass_input, $fila['clave'])) {
 		$_SESSION['idcliente'] = $fila['idcliente'];
 		$_COOKIE['carrito'] = array("cliente" => array("id" => $_SESSION['idcliente']), "productos" => array());
-		$path="./pages/shop.php";
-		header('Location: '.$path);
+		$path = "./pages/shop.php";
+		echo "<p>Session: " . $_SESSION['idcliente'] . " - Carrito " . $_COOKIE['carrito']["id"] . "</p>";
+
+		header('Location: ' . $path);
 
 		exit();
 	} else {
 		$message = 'Sorry, those credentials do not match';
 		echo $message;
 	}
-
 }
 /* 
 
