@@ -1,12 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
+/* body {
   margin: 0px;
-  /*    background-color: #204862; */
+     background-color: #204862;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 h1 {
   color: white;
   text-align: center;
