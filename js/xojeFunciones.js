@@ -1,96 +1,100 @@
 export function addProduct(product) {
-	const newProduct={
-		 id : product.querySelector(".d-none").innerText,
-         precio : parseInt(product.querySelector(".price-sale").innerText),
-         modo_venta : product.querySelector(".price-sale").innerText.split('/')[1]
-	}
-	let carrito = getCookie('carrito');
-	const isInUnidad='Unidad'==newProduct.modo_venta;
-	const cantidad=(isInUnidad)?1:0.5;
-	if (!carrito) {
-		let data = {
-			cliente: {
-				id: sessionStorage.getItem('idcliente')
-			},
-			productos: [],
-		};
-		data.productos.push({
-			id: newProduct.id,
-			cantidad: cantidad,
-			coste: newProduct.precio,
-		});
-		setCookie('carrito', data);
-	} else {
-		let aumentado = false;
-		carrito = JSON.parse(carrito);
-		carrito.productos.forEach(producto => {
-			if (producto.id == newProduct.id) {
-				producto.cantidad+=cantidad;
-				producto.coste += producto.coste;
-				aumentado = true;
-			}
-		});
-		if (!aumentado) {
-			carrito.productos.push({ id: newProduct.id, cantidad: cantidad });
-		}
-		setCookie('carrito', carrito);
-	}
-	actualizaNumCarrito();
+  const newProduct = {
+    id: product.querySelector(".d-none").innerText,
+    precio: parseInt(product.querySelector(".price-sale").innerText),
+    modo_venta: product.querySelector(".price-sale").innerText.split("/")[1],
+  };
+  let carrito = getCookie("carrito");
+  const isInUnidad = "Unidad" == newProduct.modo_venta;
+  const cantidad = isInUnidad ? 1 : 0.5;
+  if (!carrito) {
+    let data = {
+      cliente: {
+        id: sessionStorage.getItem("idcliente"),
+      },
+      productos: [],
+    };
+    data.productos.push({
+      id: newProduct.id,
+      cantidad: cantidad,
+      coste: newProduct.precio,
+    });
+    setCookie("carrito", data);
+  } else {
+    let aumentado = false;
+    carrito = JSON.parse(carrito);
+    carrito.productos.forEach((producto) => {
+      if (producto.id == newProduct.id) {
+        producto.cantidad += cantidad;
+        producto.coste += producto.coste;
+        aumentado = true;
+      }
+    });
+    if (!aumentado) {
+      carrito.productos.push({ id: newProduct.id, cantidad: cantidad });
+    }
+    setCookie("carrito", carrito);
+  }
+  actualizaNumCarrito();
 }
-export function removeProduct(id = '') {
-	let carrito = getCookie('carrito');
-	carrito = JSON.parse(carrito);
-	const updateProducts=[];
-	carrito.productos.forEach(producto => {
-		if (producto.id != id) { 
-			updateProducts.push(producto);
-		}
-	});
-	carrito.productos=updateProducts;
-	setCookie('carrito', carrito);
-	actualizaNumCarrito();
+export function removeProduct(id = "") {
+  let carrito = getCookie("carrito");
+  carrito = JSON.parse(carrito);
+  const updateProducts = [];
+  carrito.productos.forEach((producto) => {
+    if (producto.id != id) {
+      updateProducts.push(producto);
+    }
+  });
+  carrito.productos = updateProducts;
+  setCookie("carrito", carrito);
+  actualizaNumCarrito();
 }
 export function getCookie(cname) {
-	let name = cname + '=';
-	let decodedCookie = decodeURIComponent(document.cookie);
-	let ca = decodedCookie.split(';');
-	for (let i = 0; i < ca.length; i++) {
-		let c = ca[i];
-		while (c.charAt(0) == ' ') {
-			c = c.substring(1);
-		}
-		if (c.indexOf(name) == 0) {
-			return c.substring(name.length, c.length);
-		}
-	}
-	return '';
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(";");
+  for (let i = 0; i < ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == " ") {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
 }
 export function setCookie(cname, cvalue) {
-	const d = new Date();
-	d.setTime(d.getTime() + 30 * 60 * 1000);
-	let expires = 'expires=' + d.toUTCString();
-	document.cookie =
-		cname + '=' + JSON.stringify(cvalue) + ';' + expires + ';path=/;';
+  const d = new Date();
+  d.setTime(d.getTime() + 30 * 60 * 1000);
+  let expires = "expires=" + d.toUTCString();
+  document.cookie =
+    cname + "=" + JSON.stringify(cvalue) + ";" + expires + ";path=/;";
 }
 export function actualizaNumCarrito() {
-	const logoCarrito = document.getElementById('logo_cart');
-	let carrito = getCookie('carrito');
-	if (carrito) {
-		carrito = JSON.parse(carrito);
-		let cantidadProductos = 0;
-		carrito.productos.forEach(producto => {
-			cantidadProductos += producto.cantidad;
-		});
-		logoCarrito.innerHTML = `<span class="icon-shopping_cart"></span>[${cantidadProductos}]`;
-	}
+  const logoCarrito = document.getElementById("logo_cart");
+  const idCliente = sessionStorage.getItem("idcliente");
+  let carrito = getCookie("carrito");
+  if (carrito) {
+    carrito = JSON.parse(carrito);
+    let cantidadProductos = 0;
+    carrito.productos.forEach((producto) => {
+      cantidadProductos += producto.cantidad;
+    });
+    logoCarrito.innerHTML = `<span class="icon-shopping_cart"></span>[${cantidadProductos}]`;
+    if (cliente) {
+      carrito.cliente.id = idCliente;
+    }
+  }
 }
 export function printCarrito() {
-	const output = document.querySelector('tbody');
-	let carrito = getCookie('carrito');
-	carrito = JSON.parse(carrito);
-	const productos = carrito.productos;
-	console.log(productos);
-	output.innerHTML = `
+  const output = document.querySelector("tbody");
+  let carrito = getCookie("carrito");
+  carrito = JSON.parse(carrito);
+  const productos = carrito.productos;
+  console.log(productos);
+  output.innerHTML = `
 	<tr class="text-center">
 	<td class="product-remove">
 		<a href="#"><span class="ion-ios-close"></span></a>
@@ -125,42 +129,41 @@ export function printCarrito() {
 </tr>`;
 }
 export function printCliente() {
-	let carrito = getCookie('carrito');
+  let carrito = getCookie("carrito");
 
-	if (carrito) {
-		carrito = JSON.parse(carrito);
-		const cliente = carrito.cliente;
-		const nombre = document.getElementById('cliente_nombre');
-		nombre.value = cliente.nombre;
-		document.getElementById('cliente_apellido1').value = cliente.apellido1;
-		document.getElementById('cliente_apellido2').value = cliente.apellido2;
-		document.getElementById('cliente_pais').value = cliente.pais;
-		document.getElementById('cliente_direccion').value = cliente.direccion;
-		document.getElementById('cliente_piso').value = cliente.piso;
-		document.getElementById('cliente_ciudad').value = cliente.ciudad;
-		document.getElementById('cliente_cPostal').value = cliente.cPostal;
-		document.getElementById('cliente_telefono').value = cliente.telefono;
-		document.getElementById('cliente_email').value = cliente.email;
-	}
+  if (carrito) {
+    carrito = JSON.parse(carrito);
+    const cliente = carrito.cliente;
+    const nombre = document.getElementById("cliente_nombre");
+    nombre.value = cliente.nombre;
+    document.getElementById("cliente_apellido1").value = cliente.apellido1;
+    document.getElementById("cliente_apellido2").value = cliente.apellido2;
+    document.getElementById("cliente_pais").value = cliente.pais;
+    document.getElementById("cliente_direccion").value = cliente.direccion;
+    document.getElementById("cliente_piso").value = cliente.piso;
+    document.getElementById("cliente_ciudad").value = cliente.ciudad;
+    document.getElementById("cliente_cPostal").value = cliente.cPostal;
+    document.getElementById("cliente_telefono").value = cliente.telefono;
+    document.getElementById("cliente_email").value = cliente.email;
+  }
 }
 export function printTotal() {
-	let carrito = getCookie('carrito');
+  let carrito = getCookie("carrito");
 
-	if (carrito) {
-		carrito = JSON.parse(carrito);
-		const productos = carrito.productos;
-		productos.forEach(producto => { });
-	}
+  if (carrito) {
+    carrito = JSON.parse(carrito);
+    const productos = carrito.productos;
+    productos.forEach((producto) => {});
+  }
 }
 export function checkIsLogged() {
-	const login = getCookie('isLogged');
+  const login = getCookie("isLogged");
 }
 export function disableAnchorChilds(wrapper = document.createElement("div")) {
-	const hijosWrapper = wrapper.querySelectorAll('a');
-	hijosWrapper.forEach(hijo => {
-		hijo.onclick = e => {
-			e.preventDefault();
-		};
-	});
+  const hijosWrapper = wrapper.querySelectorAll("a");
+  hijosWrapper.forEach((hijo) => {
+    hijo.onclick = (e) => {
+      e.preventDefault();
+    };
+  });
 }
-
