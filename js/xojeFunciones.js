@@ -36,8 +36,6 @@ export function addProduct(product) {
     setCookie("carrito", carrito);
   }
   actualizaNumCarrito();
-  console.log(getPHPCookie());
-  alert("read console");
 }
 export function removeProduct(id = "") {
   let carrito = getCookie("carrito");
@@ -169,7 +167,7 @@ export function disableAnchorChilds(wrapper = document.createElement("div")) {
     };
   });
 }
-function getPHPCookie() {
+export function getPHPCookie() {
   const cname = "PHPSESSID";
   const name = cname + "=";
   let ca = document.cookie.split(";");
