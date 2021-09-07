@@ -22,12 +22,9 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 		echo "<p>Session: " . $_SESSION['idcliente'] . " - Carrito " . $_COOKIE['carrito']["cliente"]["id"] . "</p>";
 
 		$path = "./pages/shop.php";
-		header('Location: ' . $path);
-		$path = "./pages/clientes.php";
 
 		echo "<script>window.location.href='" . $path . "';</script>";
 		//header('Location: ./pages/clientes.php');
-
 
 		exit();
 	} else {

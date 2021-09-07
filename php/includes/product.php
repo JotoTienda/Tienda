@@ -1,13 +1,3 @@
-<?php
-$output="";
-if ($isLogged) {
-	$output="Funciona";
-}else {
-	$output="No funciona";
-}
-echo "<script>console.log('".$output."')</script>";
-
-?>
 <div class="col-md-6 col-lg-3 ftco-animate">
 	<div class="product">
 		<span class="d-none">
@@ -54,9 +44,7 @@ echo "<script>console.log('".$output."')</script>";
 						<span>
 							<i class="
 									<?php
-									//Ponemos true para seguir haciendo carrito, pero queda testear isLogged
-									
-									if (true) {
+									if ($isLogged) {
 										$result = "ion-ios-cart";
 									} else {
 										$result = "ion-ios-log-in";
