@@ -1,11 +1,12 @@
 <?php
 require("../checkSession.php");
 if ($isLogged) {
-	header("location: shop.php");
+	$path = "./shop.php";
+
+	echo "<script>window.location.href='" . $path . "';</script>";
 } else {
 	require("../includes/navbar.php");
 ?>
-
 	<link rel="stylesheet" href="../../css/resgitroResponsive.css"><!-- Este archivo no esta en el servidor -->
 
 	<div id="errores" class="row block-8" style="padding: 20px;"></div>
@@ -130,5 +131,4 @@ if ($isLogged) {
 <?php
 	require("../includes/main_footer.php");
 }
-
 ?>

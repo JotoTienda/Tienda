@@ -10,7 +10,7 @@ if (isset($_SESSION['idcliente'])) {
 	$user = null;
 	if (count($fila) > 0) {
 		$user = $fila;
-		echo "<p>Sesion iniciada con" . $user["usuario"] . "</p>";
+		echo "<p>Sesion iniciada con " . $user["usuario"] . "</p>";
 	}
 	$isLogged = !empty($user);
 }
