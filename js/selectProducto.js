@@ -4,7 +4,10 @@ productos.forEach((producto) => {
   disableAnchorChilds(producto);
   const btn_add = producto.querySelector(".buy-now");
   btn_add.onclick = () => {
-    addProduct(producto);
+    const idCliente = sessionStorage.getItem("idcliente");
+    if (idCliente) {
+      addProduct(producto);
+    }
   };
   producto.onclick = (e = new Event("click")) => {
     if (!e.target.classList.contains("ion-ios-cart")) {
