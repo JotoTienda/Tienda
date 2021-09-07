@@ -1,4 +1,4 @@
-import { disableAnchorChilds, addProduct, getPHPCookie } from "./xojeFunciones.js";
+import { disableAnchorChilds, addProduct } from "./xojeFunciones.js";
 const productos = document.querySelectorAll(".product");
 productos.forEach((producto) => {
   disableAnchorChilds(producto);
@@ -13,12 +13,7 @@ productos.forEach((producto) => {
         window.location.href = `http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.innerText}`;
       }
     } else {
-      console.log(getPHPCookie());
-      alert("read console");
-      const idCliente = sessionStorage.getItem("idcliente");
-      if (idCliente) {
-        addProduct(producto);
-      }
+      addProduct(producto);
     }
   };
 });
