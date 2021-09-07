@@ -17,14 +17,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 	$message = '';
 	$path = '';
 	if (count($fila) > 0 && password_verify($pass_input, $fila['clave'])) {
-		$nombre = 'carrito';
-		$valor = array("cliente" => array("id" => $_SESSION['idcliente']), "productos" => array());;
-		$expiracion = time() + 60 * 30;
-		$ruta = '/';
-		$dominio = "fruitbenidorm.es";
-		$seguridad = false;
-		$solohttp = true;
-		setcookie($nombre, $valor, $expiracion, $ruta, $dominio, $seguridad, $solohttp);
+		$_COOKIE['carrito'] = array("cliente" => array("id" => $_SESSION['idcliente']), "productos" => array());;
 		$_SESSION['idcliente'] = $fila['idcliente'];
 		echo "<p>Session: " . $_SESSION['idcliente'] . " - Carrito " . $_COOKIE['carrito']["cliente"]["id"] . "</p>";
 
@@ -32,7 +25,7 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 		header('Location: ' . $path);
 		$path = "./pages/clientes.php";
 
-		echo "<script>window.location.href=" . $path . "</script>";
+		echo "<script>window.location.href=" . $path . ";</script>";
 
 		exit();
 	} else {
