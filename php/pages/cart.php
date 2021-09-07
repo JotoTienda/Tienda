@@ -50,26 +50,7 @@ require("../includes/navbar.php");
 			</div>
 		</div>
 		<div class="row justify-content-end">
-			<div class="col-lg-4 mt-5 cart-wrap ftco-animate">
-				<div class="cart-total mb-3">
-					<h3>Código de cupón</h3>
-					<p>Introduce tu número de cupón</p>
-					<form action="#" class="info">
-						<div class="form-group">
-							<label for="">Cógido de cupón</label>
-							<input type="text" class="form-control text-left px-3" placeholder="" />
-						</div>
-					</form>
-				</div>
-				<p>
-					<a href="pages/checkout.php" class="btn btn-primary py-3 px-4">Aplica el Cupón</a>
-				</p>
-			</div>
-          
-			
-				
-			</div>*/
-			<?php require("../includes/total_carrito.php");?>
+			<?php require("../includes/total_carrito.php"); ?>
 		</div>
 	</div>
 </section>
