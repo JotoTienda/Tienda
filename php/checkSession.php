@@ -10,5 +10,5 @@ if (isset($_SESSION['idcliente'])) {
 		$user = $fila;
 	}
 	$isLogged = !empty($user);
-	echo "<script>alert('".$idCliente."')</script>";
+	echo "<script>alert('".$fila["usuario"]."')</script>";
 }
