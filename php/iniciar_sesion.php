@@ -25,7 +25,9 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 		header('Location: ' . $path);
 		$path = "./pages/clientes.php";
 
-		echo "<script>window.location.href=" . $path . ";</script>";
+		echo "<script>window.location.href='" . $path . "';</script>";
+		//header('Location: ./pages/clientes.php');
+
 
 		exit();
 	} else {
