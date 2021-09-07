@@ -13,10 +13,10 @@ productos.forEach((producto) => {
     if (!e.target.classList.contains("ion-ios-cart")) {
       if (e.target.classList.contains("ion-ios-log-in")) {
         window.location.href = `http://fruitbenidorm.es/php/pages/clientes.php`;
-      } else {
-        const idProducto = producto.querySelector(".d-none");
-        window.location.href = `http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.innerText}`;
       }
+    } else {
+      const idProducto = producto.querySelector(".d-none");
+      window.location.href = `http://fruitbenidorm.es/php/pages/product-single.php?id=${idProducto.innerText}`;
     }
   };
 });
