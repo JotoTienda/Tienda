@@ -49,7 +49,7 @@ require("../includes/navbar.php");
 				</div>
 			</div>
 		</div>
-		<div class="row justify-content-end">
+		<div class="row justify-content-center">
 			<?php require("../includes/total_carrito.php"); ?>
 		</div>
 	</div>
