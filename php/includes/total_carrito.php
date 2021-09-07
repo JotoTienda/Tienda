@@ -1,13 +1,6 @@
 <?php
 require("../includes/calc_carrito.php");
-$costeReparto = 0;
-if ($precioTotal < 5) {
-    $costeReparto = 5;
-} elseif ($precioTotal < 20) {
-    $costeReparto = 3;
-} elseif ($precioTotal < 50) {
-    $costeReparto = 0;
-}
+
 
 ?>
 <form action="../pages/proceso_venta.php" method="POST">
@@ -39,6 +32,7 @@ if ($precioTotal < 5) {
                 <hr>
                 <span><?php echo $precioTotal + $costeReparto ?> euros</span>
                 <input type="hidden" name="total" value="<?php echo $precioTotal + $costeReparto ?>">
+                <input type="hidden" name="all_products" value="<?php echo $cadenaTotal ?>">
             </p>
         </div>
         <p>

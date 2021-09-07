@@ -1,5 +1,8 @@
 <?php
 $precioTotal = 0;
+$costeReparto = 0;
+$cadenaTotal="";
+
 if (isset($_COOKIE["carrito"])) {
     $carrito = json_decode($_COOKIE["carrito"]);
     $productos = $carrito->{'productos'};
@@ -16,8 +19,16 @@ if (isset($_COOKIE["carrito"])) {
             } else {
                 $precioFinal = $fila["pre_ven"];
             }
+            $cadenaTotal+=$fila["producto"]." x ".$cantidadProducto.";";
             $precioPorCantidad = $precioFinal * $cantidadProducto;
             $precioTotal += $precioPorCantidad;
         }
+    }
+    if ($precioTotal < 5) {
+        $costeReparto = 5;
+    } elseif ($precioTotal < 20) {
+        $costeReparto = 3;
+    } elseif ($precioTotal < 50) {
+        $costeReparto = 0;
     }
 }

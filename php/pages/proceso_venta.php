@@ -32,6 +32,7 @@ require("../includes/navbar.php");
             <h4>Login + Carrito</h4>
             <p class="name">Id user: <?php echo $idUser;?></p>
             <span class="position">Total: <?php echo $total;?> €</span>
+            <span class="position">String productos: <?php echo $cadenaTotal;?></span>
         </div>
     </div>
 </div>
