@@ -11,7 +11,7 @@ if ($precioTotal < 5) {
 
 ?>
 <form action="../pages/proceso_venta.php" method="POST">
-    <div class="col-lg-12 mt-5 cart-wrap ftco-animate">
+    <div class="col-12 mt-5 cart-wrap ftco-animate">
         <div class="cart-total mb-3">
             <h3>Total del carrito</h3>
             <p class="d-flex">
