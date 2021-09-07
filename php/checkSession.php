@@ -1,5 +1,7 @@
 <?php
 session_start();
+require("conecta.php");
+
 if (isset($_SESSION['idcliente'])) {
 	$idCliente=$_SESSION['idcliente'];
 	$query_login = 'SELECT * FROM clientes WHERE idcliente ="' . $idCliente.'";';
