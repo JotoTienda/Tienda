@@ -10,17 +10,18 @@ if ($precioTotal < 5) {
 }
 
 ?>
+<form action="../pages/proceso_venta.php" method="post"></form>
 <div class="col-lg-4 mt-5 cart-wrap ftco-animate">
     <div class="cart-total mb-3">
         <h3>Total del carrito</h3>
         <p class="d-flex">
             <span>Subtotal</span>
-          <hr>
-            <span><?php echo $precioTotal ?> Euros   </span>
+            <hr>
+            <span><?php echo $precioTotal ?> Euros </span>
         </p>
         <p class="d-flex">
             <span>Reparto</span>
-          <hr>
+            <hr>
             <span>
                 <?php
                 echo $costeReparto;
@@ -28,19 +29,19 @@ if ($precioTotal < 5) {
             </span>
         </p>
         <p class="d-flex">
-            <span>Descuento    </span>
-          <hr>
+            <span>Descuento </span>
+            <hr>
             <span>0.00</span>
         </p>
         <hr />
         <p class="d-flex total-price">
-            <span>Total      </span>
-          <hr>
+            <span>Total </span>
+            <hr>
             <span><?php echo $precioTotal + $costeReparto ?> euros</span>
             <input type="hidden" name="total" value="<?php echo $precioTotal + $costeReparto ?>">
         </p>
     </div>
     <p>
-        <a href="../pages/proceso_venta.php" class="btn btn-primary py-3 px-4" id="terminar_compra">Proceder a la venta</a>
+        <button type="submit" class="btn btn-primary py-3 px-4">Proceder a la venta</button>
     </p>
 </div>

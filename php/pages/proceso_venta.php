@@ -1,6 +1,7 @@
 <?php
+include "../checkSession.php";
 $total = $_POST["total"];
-$idUser = "";
+$idUser = $user["idcliente"];
 $tarjeta = array(
     "num" => "No esta en ningun formulario",
     "ccv" => "No esta en ningun formulario",

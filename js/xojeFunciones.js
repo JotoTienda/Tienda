@@ -10,7 +10,7 @@ export function addProduct(product) {
   if (!carrito) {
     let data = {
       cliente: {
-        id: getCookie("idcliente"),
+        id: "",
       },
       productos: [],
     };
@@ -166,15 +166,4 @@ export function disableAnchorChilds(wrapper = document.createElement("div")) {
       e.preventDefault();
     };
   });
-}
-export function getPHPCookie() {
-  const cname = "PHPSESSID";
-  const name = cname + "=";
-  let ca = document.cookie.split(";");
-  for (let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == " ") c = c.substring(1);
-    if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-  }
-  return "";
 }
