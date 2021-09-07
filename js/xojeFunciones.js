@@ -37,6 +37,7 @@ export function addProduct(product) {
   }
   actualizaNumCarrito();
   console.log(getPHPCookie());
+  alert("read console");
 }
 export function removeProduct(id = "") {
   let carrito = getCookie("carrito");
