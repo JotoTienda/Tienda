@@ -17,8 +17,9 @@ if (!empty($_POST['usuario']) && !empty($_POST['clave'])) {
 	$message = '';
 	$path = '';
 	if (count($fila) > 0 && password_verify($pass_input, $fila['clave'])) {
-		$_COOKIE['carrito'] = array("cliente" => array("id" => $_SESSION['idcliente']), "productos" => array());;
 		$_SESSION['idcliente'] = $fila['idcliente'];
+		$_COOKIE['carrito'] = array("cliente" => array("id" => $_SESSION['idcliente']), "productos" => array());
+
 		echo "<p>Session: " . $_SESSION['idcliente'] . " - Carrito " . $_COOKIE['carrito']["cliente"]["id"] . "</p>";
 
 		$path = "./pages/shop.php";

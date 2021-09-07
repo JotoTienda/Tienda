@@ -10,7 +10,7 @@ export function addProduct(product) {
   if (!carrito) {
     let data = {
       cliente: {
-        id: sessionStorage.getItem("idcliente"),
+        id: getCookie("idcliente"),
       },
       productos: [],
     };
@@ -74,7 +74,7 @@ export function setCookie(cname, cvalue) {
 }
 export function actualizaNumCarrito() {
   const logoCarrito = document.getElementById("logo_cart");
-  const idCliente = sessionStorage.getItem("idcliente");
+  const idCliente = getCookie("idcliente");
   let carrito = getCookie("carrito");
   if (carrito) {
     carrito = JSON.parse(carrito);
