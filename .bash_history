@@ -393,3 +393,17 @@ git commit -m "add registro css"
 git push
 git pull
 git pull
+git status
+git add .
+git commit -m "JT Edit navbar, checkout and CSS folder "
+git push
+git status
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git pull
+git status
+clear

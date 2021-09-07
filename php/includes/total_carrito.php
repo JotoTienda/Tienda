@@ -15,10 +15,12 @@ if ($precioTotal < 5) {
         <h3>Total del carrito</h3>
         <p class="d-flex">
             <span>Subtotal</span>
-            <span><?php echo $precioTotal ?> Euros</span>
+          <hr>
+            <span><?php echo $precioTotal ?> Euros   </span>
         </p>
         <p class="d-flex">
             <span>Reparto</span>
+          <hr>
             <span>
                 <?php
                 echo $costeReparto;
@@ -26,12 +28,14 @@ if ($precioTotal < 5) {
             </span>
         </p>
         <p class="d-flex">
-            <span>Descuento</span>
-            <span>$0.00</span>
+            <span>Descuento    </span>
+          <hr>
+            <span>0.00</span>
         </p>
         <hr />
         <p class="d-flex total-price">
-            <span>Total</span>
+            <span>Total      </span>
+          <hr>
             <span><?php echo $precioTotal + $costeReparto ?> euros</span>
             <input type="hidden" name="total" value="<?php echo $precioTotal + $costeReparto ?>">
         </p>
