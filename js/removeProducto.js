@@ -10,9 +10,9 @@ filas.forEach((producto) => {
   disableAnchorChilds(btn_remove);
   btn_remove.onclick = () => {
     const id = producto.querySelector(".d-none").innerText;
-    const precio = producto.querySelector(".price").innerText;
+    const precio = producto.querySelector(".total").innerText;
     removeProduct(id);
-    restarPrecioATotal(parseFloat(precio));
+    restarPrecioATotal(parseFloat(precio.slice(0, -1)));
     producto.classList.add("d-none");
   };
 });
