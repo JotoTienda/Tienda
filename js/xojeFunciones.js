@@ -174,10 +174,11 @@ export function disableAnchorChilds(wrapper = document.createElement("div")) {
 export function restarPrecioATotal(precio = 0) {
 	const carrito=document.querySelector(".cart-total");
 	const itemsClave=[];
+	carrito.children
 	for (let i = 0; i < carrito.children.length; i++) {
 		const text = carrito.children[i].textContent;
 		if (text.includes("Euros")) {
-			itemsClave.push(children[i]);
+			itemsClave.push(carrito.children[i]);
 		}
 	}
 	console.log(itemsClave);
