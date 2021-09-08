@@ -174,7 +174,7 @@ export function disableAnchorChilds(wrapper = document.createElement("div")) {
 export function restarPrecioATotal(precio = 0) {
 	const carrito=document.querySelector(".cart-total");
 	carrito.childNodes.forEach(hijo=>{
-		console.log(hijo);
+		console.log(hijo.innerText);
 	});
 	let textoConCifras="";
 }
