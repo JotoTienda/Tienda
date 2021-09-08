@@ -41,11 +41,11 @@ export function removeProduct(id = "") {
   let carrito = getCookie("carrito");
   carrito = JSON.parse(carrito);
   const updateProducts = [];
+  let precio = 0;
+  id = id.replace(/\s/g, "");
   carrito.productos.forEach((producto) => {
-    if (producto.id.replace(/\s/g, '') !== id.replace(/\s/g, '')) {
-      console.log(producto.id.length);
-      console.log(id.length);
-      alert("Encontrado");
+    producto.id = producto.id.replace(/\s/g, "");
+    if (producto.id !== id) {
       updateProducts.push(producto);
     }
   });
@@ -73,7 +73,12 @@ export function setCookie(cname, cvalue) {
   d.setTime(d.getTime() + 30 * 60 * 1000);
   let expires = "expires=" + d.toUTCString();
   document.cookie =
-    cname + "=" + JSON.stringify(cvalue) + ";" + expires + ";path=/;SameSite=Lax;";
+    cname +
+    "=" +
+    JSON.stringify(cvalue) +
+    ";" +
+    expires +
+    ";path=/;SameSite=Lax;";
 }
 export function actualizaNumCarrito() {
   const logoCarrito = document.getElementById("logo_cart");
@@ -85,7 +90,6 @@ export function actualizaNumCarrito() {
       cantidadProductos += producto.cantidad;
     });
     logoCarrito.innerHTML = `<span class="icon-shopping_cart"></span>[${cantidadProductos}]`;
-
   }
 }
 export function printCarrito() {
@@ -166,4 +170,11 @@ export function disableAnchorChilds(wrapper = document.createElement("div")) {
       e.preventDefault();
     };
   });
+}
+export function restarPrecioATotal(precio = 0) {
+	const carrito=document.querySelector(".cart-total");
+	carrito.childNodes.forEach(hijo=>{
+		console.log(hijo);
+	});
+	let textoConCifras="";
 }
