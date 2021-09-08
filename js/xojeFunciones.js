@@ -173,8 +173,9 @@ export function disableAnchorChilds(wrapper = document.createElement("div")) {
 }
 export function restarPrecioATotal(precio = 0) {
 	const carrito=document.querySelector(".cart-total");
-	carrito.children.forEach(hijo=>{
+	/* carrito.children.forEach(hijo=>{
 		console.log(hijo);
-	});
+	}); */
+	console.log(carrito.children[0]);
 	let textoConCifras="";
 }
