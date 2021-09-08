@@ -172,14 +172,21 @@ export function disableAnchorChilds(wrapper = document.createElement("div")) {
   });
 }
 export function restarPrecioATotal(precio = 0) {
-	const carrito=document.querySelector(".cart-total");
-	const itemsClave=[];
-	carrito.children
-	for (let i = 0; i < carrito.children.length; i++) {
-		const text = carrito.children[i].textContent;
-		if (text.includes("Euros")) {
-			itemsClave.push(carrito.children[i]);
-		}
-	}
-	console.log(itemsClave);
+  const carrito = document.querySelector(".cart-total");
+  const subtotalWrapper = carrito.querySelector("#subtotal");
+  const costeRepartoWrapper = carrito.querySelector("#costeReparto");
+  const totalWrapper = carrito.querySelector("#total");
+  const subtotalPrevio = subtotalWrapper.textContent.split(" ")[0];
+  const subtotalActual = subtotalPrevio - precio;
+  let costeRepartoActual = 0;
+  if (subtotalActual < 5) {
+    costeRepartoActual = 5;
+  } else if (subtotalActual < 20) {
+    costeRepartoActual = 3;
+  } else if (subtotalActual < 50) {
+    costeRepartoActual = 0;
+  }
+  subtotalWrapper.textContent = subtotalActual + " Euros";
+  costeRepartoWrapper.textContent = costeRepartoActual + " Euros";
+  totalWrapper.textContent = subtotalActual + costeRepartoActual + " Euros";
 }

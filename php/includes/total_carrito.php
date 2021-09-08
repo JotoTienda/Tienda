@@ -10,12 +10,12 @@ require("../includes/calc_carrito.php");
             <p class="d-flex">
                 <span>Subtotal</span>
                 <hr>
-                <span><?php echo $precioTotal ?> Euros </span>
+                <span id="subtotal"><?php echo $precioTotal ?> Euros </span>
             </p>
             <p class="d-flex">
                 <span>Reparto</span>
                 <hr>
-                <span>
+                <span id="costeReparto">
                     <?php
                     echo $costeReparto;
                     ?> Euros
@@ -30,7 +30,7 @@ require("../includes/calc_carrito.php");
             <p class="d-flex total-price">
                 <span>Total </span>
                 <hr>
-                <span><?php echo $precioTotal + $costeReparto ?> Euros</span>
+                <span id="total"><?php echo $precioTotal + $costeReparto ?> Euros</span>
                 <input type="hidden" name="total" value="<?php echo $precioTotal + $costeReparto ?>">
                 <input type="hidden" name="all_products" value="<?php echo $cadenaTotal ?>">
             </p>
