@@ -12,7 +12,7 @@ filas.forEach((producto) => {
     const id = producto.querySelector(".d-none").innerText;
     const precio = producto.querySelector(".price").innerText;
     removeProduct(id);
-    restarPrecioATotal(parseInt(precio));
+    restarPrecioATotal(parseFloat(precio));
     producto.classList.add("d-none");
   };
 });
