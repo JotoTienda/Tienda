@@ -14,6 +14,5 @@ filas.forEach((producto) => {
     removeProduct(id);
     restarPrecioATotal(parseFloat(precio.slice(0, -1)));
 	console.log(parseFloat(precio.slice(0, -1)));
-    producto.classList.add("d-none");
   };
 });
