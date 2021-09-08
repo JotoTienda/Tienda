@@ -176,6 +176,6 @@ export function restarPrecioATotal(precio = 0) {
 	/* carrito.children.forEach(hijo=>{
 		console.log(hijo);
 	}); */
-	console.log(carrito.children[0].innerText);
+	console.log(carrito.children[0].textContent);
 	let textoConCifras="";
 }
