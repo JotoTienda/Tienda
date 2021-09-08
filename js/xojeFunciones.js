@@ -43,8 +43,8 @@ export function removeProduct(id = "") {
   const updateProducts = [];
   carrito.productos.forEach((producto) => {
     if (producto.id != id) {
-      console.log("producto:",producto.id);
-      console.log("select:",id);
+      console.log("producto:"+producto.id);
+      console.log("select:"+id);
       alert("Encontrado");
       updateProducts.push(producto);
     }
