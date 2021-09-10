@@ -18,7 +18,7 @@ $resultado = mysqli_query($con, $insertar);
 
 if ($resultado) {
     echo "<script>alert('Se ha registrado correctamente');
-            window.location='shop.php';</script>";
+            window.location='pages/shop.php';</script>";
 } else {
     die("error alinsertar " . mysqli_error($con));
     echo "<script>alert('No se ha registrado correctamente');
