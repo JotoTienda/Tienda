@@ -15,8 +15,9 @@ $insertar = "insert into clientes (nombre,apellido1, apellido2,correo,usuario,Di
     values ('$nombre','$apellido1','$apellido2','$correo','$usuario','$Direc','$clave','$Tele','$Codigop')";
 
 $resultado = mysqli_query($con, $insertar);
-
+$fila = mysqli_fetch_assoc($resultado);
 if ($resultado) {
+    $_SESSION['idcliente'] = $fila['idcliente'];
     echo "<script>alert('Se ha registrado correctamente');
             window.location='pages/shop.php';</script>";
 } else {
