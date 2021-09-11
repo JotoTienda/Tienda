@@ -18,7 +18,7 @@ $resultado = mysqli_query($con, $insertar);
 $fila = mysqli_fetch_assoc($resultado);
 if ($resultado) {
     $_SESSION['idcliente'] = $fila['idcliente'];
-    echo "<script>alert('Se ha registrado correctamente');
+    echo "<script>alert('Se ha registrado correctamente:".$fila['idcliente']."');
             window.location='pages/shop.php';</script>";
 } else {
     die("error alinsertar " . mysqli_error($con));
