@@ -17,7 +17,7 @@ $insertar = "insert into clientes (nombre,apellido1, apellido2,correo,usuario,Di
 $consultar = "SELECT * FROM clientes WHERE idcliente=(SELECT MAX(idcliente) FROM clientes) ;";
 $ultimoCliente = mysqli_query($con, $consultar);
 $resultado = mysqli_query($con, $insertar);
-$fila = mysqli_fetch_assoc($resultado);
+$fila = mysqli_fetch_assoc($ultimoCliente);
 if ($resultado) {
     if (count($fila) > 0) {
         $_SESSION['idcliente'] = $fila['idcliente'];
