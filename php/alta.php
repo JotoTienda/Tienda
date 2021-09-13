@@ -19,8 +19,8 @@ $ultimoCliente = mysqli_query($con, $consultar);
 $resultado = mysqli_query($con, $insertar);
 $fila = mysqli_fetch_assoc($ultimoCliente);
 if ($resultado) {
-    echo $resultado;
-    echo "<script>console.log(".$resultado.")</script>";
+    echo $fila;
+    echo "<script>console.log(".$fila.")</script>";
     if (count($fila) > 0) {
         $_SESSION['idcliente'] = $fila['idcliente'];
         echo "<script>alert('Se ha registrado correctamente:" . $fila['idcliente'] . "');
