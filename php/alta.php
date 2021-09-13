@@ -19,7 +19,7 @@ $ultimoCliente = mysqli_query($con, $consultar);
 $resultado = mysqli_query($con, $insertar);
 $fila = mysqli_fetch_assoc($ultimoCliente);
 if ($resultado) {
-    echo $fila;
+    echo $ultimoCliente;
     echo "<script>console.log(".$fila.")</script>";
     if (count($fila) > 0) {
         $_SESSION['idcliente'] = $fila['idcliente'];
