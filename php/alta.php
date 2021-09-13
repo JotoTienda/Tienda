@@ -14,11 +14,13 @@ $Codigop = valida_campo($_POST["Codigop"]);
 
 $insertar = "insert into clientes (nombre,apellido1, apellido2,correo,usuario,Direc,clave,Tele,Codigop)      
     values ('$nombre','$apellido1','$apellido2','$correo','$usuario','$Direc','$clave','$Tele','$Codigop')";
-$consultar = "SELECT * FROM clientes WHERE idcliente=(SELECT MAX(idcliente) FROM clientes) ;";
+$consultar = "SELECT * FROM clientes WHERE idcliente=(SELECT MAX(idcliente) FROM clientes);";
 $ultimoCliente = mysqli_query($con, $consultar);
 $resultado = mysqli_query($con, $insertar);
 $fila = mysqli_fetch_assoc($ultimoCliente);
 if ($resultado) {
+    echo $resultado;
+    echo "<script>console.log(".$resultado.")</script>";
     if (count($fila) > 0) {
         $_SESSION['idcliente'] = $fila['idcliente'];
         echo "<script>alert('Se ha registrado correctamente:" . $fila['idcliente'] . "');
