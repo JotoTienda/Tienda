@@ -18,10 +18,16 @@ $consultar = "SELECT * FROM clientes WHERE idcliente=(SELECT MAX(idcliente) FROM
 $ultimoCliente = mysqli_query($con, $consultar);
 $resultado = mysqli_query($con, $insertar);
 $fila = mysqli_fetch_assoc($resultado);
-if ($resultado && $ultimoCliente) {
-    $_SESSION['idcliente'] = $fila['idcliente'];
-    echo "<script>alert('Se ha registrado correctamente:" . $fila['idcliente'] . "');
-            window.location='pages/shop.php';</script>";
+if ($resultado) {
+    if (count($fila) > 0) {
+        $_SESSION['idcliente'] = $fila['idcliente'];
+        echo "<script>alert('Se ha registrado correctamente:" . $fila['idcliente'] . "');
+                window.location='pages/shop.php';</script>";
+    } else {
+        die("error al insertar " . mysqli_error($con));
+        echo "<script>alert('No se ha registrado correctamente');
+                window.history.back;</script>";
+    }
 } else {
     die("error al insertar " . mysqli_error($con));
     echo "<script>alert('No se ha registrado correctamente');
