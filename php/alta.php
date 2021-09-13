@@ -20,14 +20,14 @@ $resultado = mysqli_query($con, $insertar);
 $fila = mysqli_fetch_assoc($ultimoCliente);
 if ($resultado) {
     echo $fila;
-    echo "<script>console.log(".$ultimoCliente.")</script>";
+    echo "<script>console.log(" . $fila . ")</script>";
     if (count($fila) > 0) {
         $_SESSION['idcliente'] = $fila['idcliente'];
         echo "<script>alert('Se ha registrado correctamente:" . $fila['idcliente'] . "');
                 window.location='pages/shop.php';</script>";
     } else {
         die("error al seleccionar " . mysqli_error($con));
-        echo "<script>alert('No se ha registrado correctamente');
+        echo "<script>alert('No se ha seleccionado correctamente');
                 window.history.back;</script>";
     }
 } else {
