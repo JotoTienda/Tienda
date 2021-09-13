@@ -24,7 +24,7 @@ if ($resultado) {
         echo "<script>alert('Se ha registrado correctamente:" . $fila['idcliente'] . "');
                 window.location='pages/shop.php';</script>";
     } else {
-        die("error al insertar " . mysqli_error($con));
+        die("error al seleccionar " . mysqli_error($con));
         echo "<script>alert('No se ha registrado correctamente');
                 window.history.back;</script>";
     }
