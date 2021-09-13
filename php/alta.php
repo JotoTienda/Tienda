@@ -1,5 +1,5 @@
 <?php
-session_start();
+require("checkSession.php");
 require("conecta.php");
 require("valida_campos.php");
 $nombre = valida_campo($_POST["nombre"]);
@@ -20,7 +20,6 @@ $resultado = mysqli_query($con, $insertar);
 $fila = mysqli_fetch_assoc($ultimoCliente);
 if ($resultado) {
     echo $fila;
-    echo "<script>console.log(" . $fila . ")</script>";
     if (count($fila) > 0) {
         $_SESSION['idcliente'] = $fila['idcliente'];
         echo "<script>alert('Se ha registrado correctamente:" . $fila['idcliente'] . "');
