@@ -14,16 +14,16 @@ $Codigop = valida_campo($_POST["Codigop"]);
 
 $insertar = "insert into clientes (nombre,apellido1, apellido2,correo,usuario,Direc,clave,Tele,Codigop)      
     values ('$nombre','$apellido1','$apellido2','$correo','$usuario','$Direc','$clave','$Tele','$Codigop')";
-$consultar="SELECT * FROM clientes WHERE id=MAX(id);";
-$ultimoCliente=mysqli_query($con, $consultar);
+$consultar = "SELECT * FROM clientes WHERE idcliente=(SELECT MAX(idcliente) FROM clientes) ;";
+$ultimoCliente = mysqli_query($con, $consultar);
 $resultado = mysqli_query($con, $insertar);
 $fila = mysqli_fetch_assoc($resultado);
 if ($resultado && $ultimoCliente) {
     $_SESSION['idcliente'] = $fila['idcliente'];
-    echo "<script>alert('Se ha registrado correctamente:".$fila['idcliente']."');
+    echo "<script>alert('Se ha registrado correctamente:" . $fila['idcliente'] . "');
             window.location='pages/shop.php';</script>";
 } else {
-    die("error alinsertar " . mysqli_error($con));
+    die("error al insertar " . mysqli_error($con));
     echo "<script>alert('No se ha registrado correctamente');
             window.history.back;</script>";
 }
